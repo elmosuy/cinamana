@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 
 import styles from '../styles/Home.module.css'
-import { atomm } from './atom';
 import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
@@ -18,7 +17,6 @@ export default function Home() {
  
     // executes forever
 
-  const [inc,setinc]=useRecoilState(atomm)
 
   const [img,setimg]=useState(1)
 
