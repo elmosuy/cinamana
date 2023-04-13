@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import data from "../../api/api_hollyood2.json"
-import datas from "../../api/api_hollywood.json"
+import datas from "../../../api/api_Arabic.json"
+import data from "../../../api/api_Arabic2.json"
 
 const Movies = () => {
   const router = useRouter();   
@@ -17,7 +17,7 @@ const scroll=()=>{
   useEffect(() => {
     setTimeout(()=>{
       setpost(datas)
-     }, 6000)
+     }, 10000)
   
 
  
@@ -34,7 +34,7 @@ scroll()
     <div  className='moves-en'>
       <Head>
         <title>
-          افلام
+          افلام عربية
         </title>
       </Head>
 

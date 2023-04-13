@@ -40,9 +40,10 @@ const Signin = () => {
  
 
   return (
-    <div className='signinall' dir='rtl'>
-        <section className='signin' dir='rtl' id='signin'> 
-         <li>يرجى تسجيل  الدخول لحفظ البيانات</li>        
+    <div className='signinall'>
+      
+        <section className='signin'  id='signin'> 
+        <h2 >Login</h2>
            <input type="text" placeholder='Full name' onChange={e=>setfullname(e.target.value)}/>
             <input type="text" placeholder='Last name' onChange={e=>setlastname(e.target.value)}/>
             <input type="text" placeholder='E-mail Phone number' onChange={e=>setemail(e.target.value)} />

@@ -6,6 +6,7 @@ const Footer = () => {
     <div className='footer' dir='rtl'>
          <section>
             <ul>
+                <h2>افلام </h2>
                <li>حضاري</li>
                 <li>وثائقي </li>
                 <li>مميز</li>
@@ -14,6 +15,7 @@ const Footer = () => {
             </ul></section>
         <section>
             <ul>
+            <h2>مسلسلات تاريخية </h2>
                 <li>الافلام </li>
                 <li>المسلسلات</li>
                 
@@ -23,6 +25,7 @@ const Footer = () => {
         </section>
         <section>
             <ul>
+            <h2>افلام تاريخية </h2>
                 <li>اسباني اللماني ايطالي بلجيكي فرنسي</li>
                 <li>تركي ايراني فيتنامي روسي ياباني</li>
                 <li>امريكي برازيلي هولندي مكسيكي</li>
@@ -32,6 +35,7 @@ const Footer = () => {
         </section>
         <section>
             <ul>
+            <h2>برامج مميزة </h2>
                <li>حضاري</li>
                 <li>وثائقي </li>
                 <li>مميز</li>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import React from 'react'
 import { useRecoilState } from 'recoil';
-import { atomm } from './atom';
+// import { atomm } from './atom';
 import Footer from './componet/footer';
 import Navbar from './componet/navbar';
 import Loginf from './tools/loginfloat';
@@ -17,7 +17,7 @@ const Layout = ({children}) => {
 
 
 
-  const [incremnt,setincremnt]=useRecoilState(atomm)
+  // const [incremnt,setincremnt]=useRecoilState(atomm)
      const router = useRouter();
 
 
@@ -40,10 +40,10 @@ const handeloutlain=()=>{
 
 
   return (
-    <div>
+    <div className='contener'>
       <Head>
-      <link rel="icon" type="image/png" sizes="32x32" href="/icons.png"/>
-      <title>سينمانا</title>
+      <link rel="icon" type="image/png" sizes="64x64" href="/logot.png"/>
+      <title>Moon</title>
       </Head>
         <header dir='rtl'>
           
@@ -52,7 +52,7 @@ const handeloutlain=()=>{
           {/* <img src="cinemana.svg"  width={35}/> */}
 
 
-          <h1 onClick={()=>router.push("/")}>Cinama</h1>
+          <img className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90}/>
      
           {/* <label For="search">eee</label> */}
   </div>
@@ -65,7 +65,6 @@ const handeloutlain=()=>{
           
            <h3 onClick={handelloginf}>تسجيل الدخول </h3> 
 
-           <Link href="/signin"><h3>Sign In</h3></Link>
 
           </div>
 
@@ -73,7 +72,7 @@ const handeloutlain=()=>{
           <Navbar/>
           <Loginf />
 
-        <div onClick={handeloutlain}>{children}</div>
+        <div onClick={handeloutlain} >{children}</div>
         
         <Footer/>
     </div>

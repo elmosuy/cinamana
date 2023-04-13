@@ -1,4 +1,5 @@
 import axios from 'axios'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Loginf = () => {
@@ -20,6 +21,8 @@ console.log(email,password)
         <input placeholder='البريد الالكتروني' type="email" onChange={(e)=>setemail(e.target.value)}  />
         <input type="password" placeholder='كلمة السر' onChange={(e)=>setpassword(e.target.value)}/>
         <p >هل نسيت كلمة السر</p>
+        <Link href="/signin"><h3 className='sig'>Sign in</h3></Link>
+
 
         <button onClick={handelsubmit}>تسجيل الدخول</button>
     </div>

@@ -1,15 +1,20 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
-import LainTow from '../componet/laintow'
+import data from '../../../api/movie_lebanon.json'
 
-const homemovie = () => {
+
+const Movie = () => {
+  const router = useRouter()
+  const { id } = router.query
+  console.log(data[11].Link);
   return (
     <div className='vid'>
       <head>
         <title>Watch</title>
         <link rel="shortcut icon" href="/mana.ico" />
         </head>
-      <iframe src="https://e.qfilm.tv/embed.php?vid=df47a1d85" allowFullScreen frameborder="0"></iframe>
+    <iframe src={data[id].Link} frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
@@ -65,9 +70,8 @@ const homemovie = () => {
       <li>ابلاغ عن مشكلة</li>
       <li>قد ترغب ايضا بمشاهدة</li>
       </ul></div></div>
-      <LainTow />
     </div>
   )
 }
 
-export default homemovie
+export default Movie

@@ -4,11 +4,9 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 
-import styles from '../styles/Home.module.css'
 import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
-import Navbar from './componet/navbar';
 
 export default function Home() {
 
@@ -17,6 +15,7 @@ export default function Home() {
  
     // executes forever
 
+  // const [inc,setinc]=useRecoilState(atomm)
 
   const [img,setimg]=useState(1)
 
