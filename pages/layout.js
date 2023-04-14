@@ -52,11 +52,11 @@ const handeloutlain=()=>{
           {/* <img src="cinemana.svg"  width={35}/> */}
 
 
-          <img className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90}/>
+          {/* <img className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90}/> */}
      
           {/* <label For="search">eee</label> */}
   </div>
-                                 <img src="person.svg" alt=""  className='person'/>
+                                 {/* <img src="person.svg" alt=""  className='person'/> */}
           <div className='h3'>
            <select name="" id="" className='languge'><option value="Arabic">Arabic</option>
            <option value="English">English</option>

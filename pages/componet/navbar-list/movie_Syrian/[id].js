@@ -10,25 +10,25 @@ const Movie = () => {
   console.log(data[11].Link);
   return (
     <div className='vid'>
-      <head>
+      {/* <head>
         <title>Watch</title>
         <link rel="shortcut icon" href="/mana.ico" />
-        </head>
+        </head> */}
     <iframe src={data[id].Link} frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
-          <section>
+          {/* <section>
           <p>25.7k</p> <Image  width={500}  height={350} src="/like.svg"  width={20} /></section>
           <section>
             <p>358</p>
             <Image  width={500}  height={350} src="/like.svg"  width={20} />
             
-           </section>
+           </section> */}
         </div>
    <div>
     <span className='descrption'>
           <section> 
-            <Image  width={350}  height={600} src="/i2.jpg"  className='img'/>
+            {/* <Image  width={350}  height={600} src="/i2.jpg"  className='img'/> */}
             </section>
             <section > <div className="headmovie">
                 <h3> Transfusion </h3>
@@ -50,14 +50,14 @@ const Movie = () => {
                   <div className="taqm">
                     <h4>الطاقم</h4>
                     <div className='images'>
-                    <section><img src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
+                    {/* <section><img src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
                     <section><img src="/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
                     <section><img src="/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
                     <section><img src="/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
                     <section><img src="/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
                     <section><img src="/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
                     <section><img src="/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
-                    <section><img src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
+                    <section><img src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section> */}
                     </div>
                   </div>
 

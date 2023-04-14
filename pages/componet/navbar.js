@@ -51,7 +51,7 @@ const Navbar = () => {
           <section className="navbar" id="navbar">
             <div className="searching">
               {" "}
-              <img  src="/search.svg" alt="" width={20} />{" "}
+              {/* <img  src="/search.svg" alt="" width={20} />{" "} */}
               <input
                 type="text"
                 name="search"
@@ -66,16 +66,16 @@ const Navbar = () => {
             </div>
 
             <div>
-              <img src="" /> <span onClick={()=>router.push("/componet/navbar-list/movies_new")}>الاصدارات الجديدة</span>
+              {/* <img src="" /> <span onClick={()=>router.push("/componet/navbar-list/movies_new")}>الاصدارات الجديدة</span> */}
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المشهورة</Link>
+              {/* <img src="" /> <Link href="homemovie">المشهورة</Link> */}
             </div>
 
             <div>
-              {" "}
-              <span  onClick={handelfilm}>الافلام<img src="/lefter.svg" width={20} /></span>
+              {/* {" "}<img src="/lefter.svg" width={20} /> */}
+              <span  onClick={handelfilm}>الافلام</span>
               <div className="aflam" id="aflam">
                <Link href="/componet/navbar-list/movies"><p>افلام اجنبية</p></Link>
                <Link href="/componet/navbar-list/movies-arabic/movie-ar"><p>الافلام عربية</p></Link>
@@ -91,28 +91,28 @@ const Navbar = () => {
             </div>
 
             <div>
-             <span><img src="/lefter.svg" width={20}/></span> <Link href=""> مسلسلات</Link>
+              <span>{/*<img src="/lefter.svg" width={20}/> */}</span> <Link href=""> مسلسلات</Link>
             </div>
 
             <div>
-              <img src="" /> <Link href="/componet/navbar-list/movie_Anami">انمي</Link>
+              {/* <img src="" /> */}<Link href="/componet/navbar-list/movie_Anami">انمي</Link> 
             </div>
             <hr />
 
             <div>
-              <img src="" /> <Link href="homemovie">تابع المشاهدة</Link>
+              {/* <img src="" /> */}<Link href="homemovie">تابع المشاهدة</Link> 
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المشاهدة لاحقا</Link>
+              {/* <img src="" /> */}<Link href="homemovie">المشاهدة لاحقا</Link> 
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المفضلة</Link>
+              {/* <img src="" />*/} <Link href="homemovie">المفضلة</Link> 
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">الاشتراكات</Link>
+              {/* <img src="" />*/} <Link href="homemovie">الاشتراكات</Link> 
             </div>
             <div className="sotialmedia">
               <Image height={30} src="/facebook.svg" width={30} alt="" />

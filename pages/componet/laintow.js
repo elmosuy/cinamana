@@ -18,7 +18,7 @@ const LainTow = () => {
 
   return (
     <div className='alllain'>
-        <h4>المسلسلات الجديدة</h4>
+        {/* <h4>المسلسلات الجديدة</h4>
         <div className='lainone' dir='rtl' id='linone'>
            <section onClick={()=>router.push("./film/homemovie")}>
             <div className="im"><Image  width={500}  height={350}  src="/i10.jpg"  />
@@ -82,7 +82,7 @@ const LainTow = () => {
            </section>
 
 
-        </div>
+        </div> */}
     </div>
   )
 }

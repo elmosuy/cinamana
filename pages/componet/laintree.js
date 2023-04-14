@@ -7,7 +7,7 @@ const LainTree = () => {
 
   return (
     <div className='alllain'>
-        <h4>الافلام الشائعة</h4>
+        {/* <h4>الافلام الشائعة</h4>
         <div className='lainone' dir='rtl' id='linone'>
            
            <section onClick={()=>router.push("./film/homemovie")} className="item" >
@@ -72,7 +72,7 @@ const LainTree = () => {
            </section>
 
 
-        </div>
+        </div> */}
     </div>
   )
 }

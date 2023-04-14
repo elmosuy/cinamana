@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='flootrs'>
-    <div className='footer' dir='rtl'>
+    {/* <div className='footer' dir='rtl'>
          <section>
             <ul>
                 <h2>افلام </h2>
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
         </section>
         </div>
-        <div><p>  &copy; Cinama 2023 Powered by Elmosuy  </p></div>
+        <div><p>  &copy; Cinama 2023 Powered by Elmosuy  </p></div> */}
     </div>
   )
 }

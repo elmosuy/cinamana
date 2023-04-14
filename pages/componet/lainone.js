@@ -25,7 +25,7 @@ const LainOne = () => {
   return (
     <div className='alllain'>
        
-        <h4>الافلام الحصرية {val}</h4>
+        {/* <h4>الافلام الحصرية {val}</h4>
         <div className='lainone' dir='rtl' id='linone'>
            
            <section onClick={()=>router.push("./film/homemovie")} className="item" >
@@ -94,7 +94,7 @@ const LainOne = () => {
            </section>
 
 
-        </div>
+        </div> */}
     </div>
   )
 }

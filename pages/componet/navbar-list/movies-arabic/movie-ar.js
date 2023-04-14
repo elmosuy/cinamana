@@ -71,7 +71,7 @@ scroll()
       <section  key={i.id} className='a-en'>
           <div className={i.id}>
             <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
-            <img src="/play.svg" width={50} height={50} className='play-img' id='play'/>
+            {/* <img src="/play.svg" width={50} height={50} className='play-img' id='play'/> */}
            <p>{i.IMDb}</p>
             <Image  width={300} height={200}   src={i.Image}></Image>
            
@@ -89,7 +89,7 @@ scroll()
       <section  key={i.id} className='a-en'>
           <div className={i.id}>
             <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
-            <img src="/play.svg" width={50} height={50} className='play-img' id='play'/>
+            {/* <img src="/play.svg" width={50} height={50} className='play-img' id='play'/> */}
            <p>{i.IMDb}</p>
             <Image  width={300} height={200}   src={i.Image}></Image>
            

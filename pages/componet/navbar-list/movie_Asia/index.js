@@ -58,13 +58,13 @@ const Movies = () => {
                 className="img-film-en"
                 onClick={() => router.push(`/componet/navbar-list/movie_Asia/${i.id}`)}
               >
-                <img
+                {/* <img
                   src="/play.svg"
                   width={50}
                   height={50}
                   className="play-img"
                   id="play"
-                />
+                /> */}
                 <p>{i.IMDb}7.2</p>
                 <Image width={300} height={200} src={i.Image}></Image>
               </div>

@@ -57,15 +57,15 @@ const Movies = () => {
                 className="img-film-en"
                 onClick={() => router.push(`/componet/navbar-list/movie_Syrian/${i.id}`)}
               >
-                <img
+                {/* <img
                   src="/play.svg"
                   width={50}
                   height={50}
                   className="play-img"
                   id="play"
-                />
+                /> */}
                 <p>{i.IMDb}7.2</p>
-                <Image width={300} height={200} src={i.Image}></Image>
+                {/* <Image width={300} height={200} src={i.Image}></Image> */}
               </div>
               <p>{i.title}</p>
               <p className="type-movie">كوميدي 2022, دراما</p>
