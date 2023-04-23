@@ -139,6 +139,7 @@ header .h3{
     transition: .5s ease;
     position: relative;
     cursor: pointer;
+    right: 15px;
     font-size: 15px;
 
   }
@@ -883,7 +884,7 @@ height: 20px;
 .a-en .type-movie{
   font-size: 5px;
   position: relative;
-  top: 10px ;
+  top: 1px ;
 }
 .serch-movies{
   display: flex;
@@ -918,6 +919,12 @@ height: 20px;
   width: 150px;
   border-radius: 0px;
 }
+.vid iframe{
+  width: 100%;
+  position: relative;
+  right: 5px;
+}
+
 
 }
 
@@ -998,6 +1005,7 @@ height: 20px;
   padding-bottom: -10px;
   text-align: right;
   height: 30px;
+  width: 100%;
 }
 .aflam p:hover{
   background-color: #0000005b;
