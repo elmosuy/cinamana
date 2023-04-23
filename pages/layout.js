@@ -43,7 +43,7 @@ const handeloutlain=()=>{
   return (
     <div>
       <Head>
-      <link rel="icon" type="image/png" sizes="64x64" href="/logot.png"/>
+      <link rel="icon" type="image/png" sizes="64x64" href="/cinamana/logot.png"/>
       <title>Moon</title>
       </Head>
         <header dir='rtl'>
@@ -52,7 +52,7 @@ const handeloutlain=()=>{
          
 
 
-          <Image className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90} height={35}/>
+          <Image className='logo' onClick={()=>router.push("/")} src="/cinamana/llb.png" width={90} height={35}/>
      
   </div>
                                  {/* <Image width={30} height={30} src="person.svg" alt=""  className='person'/> */}
