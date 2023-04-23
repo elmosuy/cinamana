@@ -8,6 +8,7 @@ import { useRecoilState } from 'recoil';
 import Footer from './componet/footer';
 import Navbar from './componet/navbar';
 import Loginf from './tools/loginfloat';
+import Image from 'next/image';
 
 const Layout = ({children}) => {
 
@@ -40,7 +41,7 @@ const handeloutlain=()=>{
 
 
   return (
-    <div className='contener'>
+    <div>
       <Head>
       <link rel="icon" type="image/png" sizes="64x64" href="/logot.png"/>
       <title>Moon</title>
@@ -52,7 +53,7 @@ const handeloutlain=()=>{
           {/* <img src="cinemana.svg"  width={35}/> */}
 
 
-          {/* <img className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90}/> */}
+          <Image className='logo' onClick={()=>router.push("/")} src="/llb.png" width={90} height={35}/>
      
           {/* <label For="search">eee</label> */}
   </div>
@@ -72,7 +73,7 @@ const handeloutlain=()=>{
           <Navbar/>
           <Loginf />
 
-        <div onClick={handeloutlain} >{children}</div>
+        <div onClick={handeloutlain}>{children}</div>
         
         <Footer/>
     </div>

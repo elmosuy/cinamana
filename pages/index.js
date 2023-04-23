@@ -1,53 +1,53 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
-// import { useEffect, useState } from 'react';
-// import { useRecoilState } from 'recoil';
+import { useEffect, useState } from 'react';
+import { useRecoilState } from 'recoil';
 
-// import LainOne from './componet/lainone';
-// import LainTow from './componet/laintow';
-// import LainTree from './componet/laintree';
+import LainOne from './componet/lainone';
+import LainTow from './componet/laintow';
+import LainTree from './componet/laintree';
 
 export default function Home() {
 
-//   const router = useRouter();
+  const router = useRouter();
 
  
-//     // executes forever
+    // executes forever
 
-//   // const [inc,setinc]=useRecoilState(atomm)
+  // const [inc,setinc]=useRecoilState(atomm)
 
-//   const [img,setimg]=useState(1)
-
-
-
-// console.log(img);
-// const handelnextmovie=()=>{
-//  if(img>=6){
-//     setimg(1)
-//    }else{
-//     setimg(img+1)
-//    }}
+  const [img,setimg]=useState(1)
 
 
-//    const handelprevmovie=()=>{
-//     if(img>1){
-//        setimg(img-1)
-//       }else{
-//        setimg(6)
-//       }}
+
+console.log(img);
+const handelnextmovie=()=>{
+ if(img>=6){
+    setimg(1)
+   }else{
+    setimg(img+1)
+   }}
+
+
+   const handelprevmovie=()=>{
+    if(img>1){
+       setimg(img-1)
+      }else{
+       setimg(6)
+      }}
 
 
   return (
     <div  className='index'>
-      {/* <head>
+      <Head>
         <title>الصفحة الرئيسية</title>
       
-      </head> */}
+      </Head>
 
      
-{/* 
-        <div className="background" style={{ backgroundImage: `url(/movie${img}.jpg) `}}>       
+
+        {/* <div className="background" style={{ backgroundImage: `url(/movie${img}.jpg) `}}>       
           <div className='leftright'> <img src="rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
                <section dir='rtl' className='shahd'>

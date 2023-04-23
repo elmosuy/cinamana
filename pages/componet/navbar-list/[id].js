@@ -1,13 +1,18 @@
-import Image from 'next/image'
 import Head from 'next/head'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
-import LainTow from '../componet/laintow'
+import data from '../../api/movie_hollywood.json'
 
-const homemovie = () => {
+
+const Movie = () => {
+  const router = useRouter()
+  const { id } = router.query
+  console.log(data[71].Link);
   return (
     <div className='vid'>
     
-      <video src="/video.mp4" controls />
+    <iframe src={data[id||1].Link} frameborder="0" allowFullScreen controls='true'  width={600} height={600}></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
@@ -43,14 +48,14 @@ const homemovie = () => {
                   <div className="taqm">
                     <h4>الطاقم</h4>
                     <div className='images'>
-                    <section><Image height={40}src="/m1.jpg"  width={40}/><p >Krear ail jasim</p></section>
-                    <section><Image height={40}src="/m2.jpg"  width={40}/><p>Solag  ogloa</p></section>
-                    <section><Image height={40}src="/m3.jpg"  width={40}/><p>Jone Faraq</p></section>
-                    <section><Image height={40}src="/m4.jpg"  width={40}/><p>Alksender</p></section>
-                    <section><Image height={40}src="/m5.jpg"  width={40}/><p>Foad kasm</p></section>
-                    <section><Image height={40}src="/m6.jpg"  width={40}/><p>Well smeath</p></section>
-                    <section><Image height={40}src="/m7.jpg"  width={40}/><p>Nor Shareef</p></section>
-                    <section><Image height={40}src="/m88.jpg"  width={40}/><p>Sara Karina </p></section>
+                    <section><Image height={40} src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
+                    <section><Image height={40} src="/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
+                    <section><Image height={40} src="/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
+                    <section><Image height={40} src="/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
+                    <section><Image height={40} src="/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
+                    <section><Image height={40} src="/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
+                    <section><Image height={40} src="/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
+                    <section><Image height={40} src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
                     </div>
                   </div>
 
@@ -67,4 +72,4 @@ const homemovie = () => {
   )
 }
 
-export default homemovie
+export default Movie
