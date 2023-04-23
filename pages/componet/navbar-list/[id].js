@@ -16,10 +16,10 @@ const Movie = () => {
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
-          <p>25.7k</p> <Image  width={20}  height={20} src="/like.svg"   /></section>
+          <p>25.7k</p> <Image  width={20}  height={20} src="/cinamana/like.svg"   /></section>
           <section>
             <p>358</p>
-            <Image  width={20}  height={20} src="/like.svg"   />
+            <Image  width={20}  height={20} src="/cinamana/like.svg"   />
             
            </section>
         </div>
@@ -48,14 +48,14 @@ const Movie = () => {
                   <div className="taqm">
                     <h4>الطاقم</h4>
                     <div className='images'>
-                    <section><Image height={40} src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
-                    <section><Image height={40} src="/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
-                    <section><Image height={40} src="/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
-                    <section><Image height={40} src="/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
-                    <section><Image height={40} src="/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
-                    <section><Image height={40} src="/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
-                    <section><Image height={40} src="/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
-                    <section><Image height={40} src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
+                    <section><Image height={40} src="/cinamana/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
+                    <section><Image height={40} src="/cinamana/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
+                    <section><Image height={40} src="/cinamana/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
+                    <section><Image height={40} src="/cinamana/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
+                    <section><Image height={40} src="/cinamana/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
+                    <section><Image height={40} src="/cinamana/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
+                    <section><Image height={40} src="/cinamana/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
+                    <section><Image height={40} src="/cinamana/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
                     </div>
                   </div>
 
