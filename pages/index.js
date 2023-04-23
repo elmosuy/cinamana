@@ -7,7 +7,10 @@ import { useRecoilState } from 'recoil';
 import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
-
+import Lain4 from './componet/lain4';
+import Lain5 from './componet/lain5';
+import Lain6 from './componet/lain6';
+import Lain7 from './componet/lain7';
 
 export default function Home() {
 
@@ -49,7 +52,7 @@ const handelnextmovie=()=>{
      
 
          <div className="background" style={{ backgroundImage: `url(/movie${img}.jpg) `}}>       
-          <div className='leftright'> <img src="rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
+          <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
                <section dir='rtl' className='shahd'>
                 <h4 onClick={()=>router.push("./film/homemovie")}>شاهد الان</h4>
@@ -59,12 +62,12 @@ const handelnextmovie=()=>{
        </div>
       <div className='moviest'>
             <div className='mov' dir='rtl'>
-            <section onClick={()=>setimg(1)} style={{ backgroundImage: `url(/movie1.jpg)`}}></section>
-            <section onClick={()=>setimg(2)} style={{ backgroundImage: `url(/movie2.jpg)`}}></section>
-            <section onClick={()=>setimg(3)} style={{ backgroundImage: `url(/movie3.jpg)`}}></section>
-            <section onClick={()=>setimg(4)} style={{ backgroundImage: `url(/movie4.jpg)`}}></section>
-            <section onClick={()=>setimg(5)} style={{ backgroundImage: `url(/movie5.jpg)`}}></section>
-            <section onClick={()=>setimg(6)} style={{ backgroundImage: `url(/movie6.jpg)`}}></section>
+            <section onClick={()=>setimg(1)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/2804495f5-1.jpg)`}}></section>
+            <section onClick={()=>setimg(2)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/d1f2baee2-1.jpg`}}></section>
+            <section onClick={()=>setimg(3)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/34f26137b-1.jpg)`}}></section>
+            <section onClick={()=>setimg(4)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/2868f636e-1.jpg)`}}></section>
+            <section onClick={()=>setimg(5)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/8546656a0-1.jpg)`}}></section>
+            <section onClick={()=>setimg(6)} style={{ backgroundImage: `url(https://e.qfilm.tv/uploads/thumbs/e5ff774b3-1.jpg)`}}></section>
             
         </div>
       </div>
@@ -73,7 +76,10 @@ const handelnextmovie=()=>{
         <LainOne />
         <LainTow/>
         <LainTree/>
-       
+        {/* <Lain4/>
+        <Lain5/>
+        <Lain6/>
+        <Lain7/> */}
        
 
         
