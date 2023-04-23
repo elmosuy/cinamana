@@ -19,7 +19,7 @@ const LainOne = () => {
   return (
     <div className='alllain'>
        
-        <h4>الاكثر مشاهدة  {val}</h4>
+        <h4> الافلام المميزة</h4>
         <div className='lainone' dir='rtl' id='linone'>
            {
             data.map((el)=>(
