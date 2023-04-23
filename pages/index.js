@@ -7,10 +7,7 @@ import { useRecoilState } from 'recoil';
 import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
-import Lain4 from './componet/lain4';
-import Lain5 from './componet/lain5';
-import Lain6 from './componet/lain6';
-import Lain7 from './componet/lain7';
+
 
 export default function Home() {
 
@@ -76,10 +73,7 @@ const handelnextmovie=()=>{
         <LainOne />
         <LainTow/>
         <LainTree/>
-        {/* <Lain4/>
-        <Lain5/>
-        <Lain6/>
-        <Lain7/> */}
+       
        
 
         
