@@ -26,7 +26,7 @@ const Movie = () => {
    <div>
     <span className='descrption'>
           <section> 
-            <Image  width={350}  height={600} src="/i2.jpg"  className='img'/>
+            <Image  width={350}  height={600} src="/cinamana/i2.jpg"  className='img'/>
             </section>
             <section > <div className="headmovie">
                 <h3> Transfusion </h3>
