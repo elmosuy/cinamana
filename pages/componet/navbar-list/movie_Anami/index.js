@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import data from "../../../api/api_Anami.json";
+import Link from 'next/link';
 
 const Movies = () => {
   const router = useRouter();
@@ -22,8 +23,28 @@ const Movies = () => {
         <div className="section1">
           <ul>
             <li>افلام</li>
-            <li>مسلسلات</li>
-            <li>الانواع</li>
+<Link href="/componet/series"><li>مسلسلات</li></Link>
+             <select name="انواع" id="">
+            <option value="">الكل</option>
+              <option value="">كوميدي</option>
+              <option value="">دراما</option>
+              <option value="">رومانسي</option>
+              <option value="">مثير</option>
+              <option value="">افلام قصيرة</option>
+              <option value="">اكشن</option>
+              <option value="">برامج</option>
+              <option value="">حروب</option>
+              <option value="">حياة الغرب</option>
+              <option value="">خيال</option>
+              <option value="">رسوم متحركة</option>
+              <option value="">سيرة ذاتية</option>
+              <option value="">عائلي</option>
+              <option value="">غموض</option>
+              <option value="">مدبلج بالعربي</option>
+              <option value="">نفسي</option>
+
+
+            </select>
             <li onClick={rangetype}>
               <span>سنة 2023-1900</span>
               <div className="rang-type" id="rangeType">
@@ -58,12 +79,7 @@ const Movies = () => {
                 className="img img-film-en"
                 onClick={() => router.push(`/componet/navbar-list/movie_Anami/${i.id}`)}
               >
-                <Image
-                  src="/play.svg" className="img img-play"
-                  width={50}
-                  height={50}
-                  id="play"
-                />
+              
                 <p>{i.IMDb}7.2</p>
                 <Image width={300} height={200} src={i.Image}></Image>
               </div>

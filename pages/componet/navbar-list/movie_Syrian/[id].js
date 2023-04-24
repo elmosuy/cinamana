@@ -45,19 +45,7 @@ const Movie4 = () => {
                   <div>
                     <p>ينطلق عميل سابق بالقوات الخاصة في رحلة عبر عالم الجريمة من أجل إنقاذ ابنه الوحيد</p>
                   </div>
-                  <div className="taqm">
-                    <h4>الطاقم</h4>
-                    <div className='images'>
-                    <section><Image  height={40} src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
-                    <section><Image  height={40} src="/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
-                    <section><Image  height={40} src="/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
-                    <section><Image  height={40} src="/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
-                    <section><Image  height={40} src="/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
-                    <section><Image  height={40} src="/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
-                    <section><Image  height={40} src="/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
-                    <section><Image  height={40} src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
-                    </div>
-                  </div>
+                 
 
                
             </section>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React from 'react'
 import data from '../../api/movie_hollywood.json'
+import data2 from '../../api/api_hollywood.json'
 
 
 const Movie = () => {
@@ -16,17 +17,17 @@ const Movie = () => {
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
-          <p>25.7k</p> <Image  width={20}  height={20} src="/cinamana/like.svg"   /></section>
+          <p>25.7k</p> <Image  width={20}  height={20} src="/like.svg"   /></section>
           <section>
             <p>358</p>
-            <Image  width={20}  height={20} src="/cinamana/like.svg"   />
+            <Image  width={20}  height={20} src="/like.svg"   />
             
            </section>
         </div>
    <div>
     <span className='descrption'>
           <section> 
-            <Image  width={350}  height={600} src="/cinamana/i2.jpg"  className='img'/>
+            {/* <Image  width={350}  height={600} src={data2[id+1].Image}  className='img'/> */}
             </section>
             <section > <div className="headmovie">
                 <h3> Transfusion </h3>
@@ -45,29 +46,14 @@ const Movie = () => {
                   <div>
                     <p>ينطلق عميل سابق بالقوات الخاصة في رحلة عبر عالم الجريمة من أجل إنقاذ ابنه الوحيد</p>
                   </div>
-                  <div className="taqm">
-                    <h4>الطاقم</h4>
-                    <div className='images'>
-                    <section><Image height={40} src="/cinamana/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
-                    <section><Image height={40} src="/cinamana/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
-                    <section><Image height={40} src="/cinamana/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
-                    <section><Image height={40} src="/cinamana/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
-                    <section><Image height={40} src="/cinamana/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
-                    <section><Image height={40} src="/cinamana/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
-                    <section><Image height={40} src="/cinamana/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
-                    <section><Image height={40} src="/cinamana/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section>
-                    </div>
-                  </div>
-
+                  
                
             </section>
+    
      </span>
-     <ul>
-      <li>اضافة الى القائمة</li>
-      <li>اضف الى المفضلة</li>
-      <li>ابلاغ عن مشكلة</li>
-      <li>قد ترغب ايضا بمشاهدة</li>
-      </ul></div></div>
+     
+    </div></div>
+ 
     </div>
   )
 }

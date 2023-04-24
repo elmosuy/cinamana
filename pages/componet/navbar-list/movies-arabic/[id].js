@@ -11,7 +11,7 @@ const Movie9 = () => {
   return (
     <div className='vid'>
     
-    <iframe src={data[id||1].Link} frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
+    <iframe src={data[id||1].Link} frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
@@ -44,29 +44,16 @@ const Movie9 = () => {
                   <div>
                     <p>ينطلق عميل سابق بالقوات الخاصة في رحلة عبر عالم الجريمة من أجل إنقاذ ابنه الوحيد</p>
                   </div>
-                  <div className="taqm">
-                    <h4>الطاقم</h4>
-                    <div className='images'>
-                    {/* <section><img src="/m1.jpg" alt="" width={40}/><p >Krear ail jasim</p></section>
-                    <section><img src="/m2.jpg" alt="" width={40}/><p>Solag  ogloa</p></section>
-                    <section><img src="/m3.jpg" alt="" width={40}/><p>Jone Faraq</p></section>
-                    <section><img src="/m4.jpg" alt="" width={40}/><p>Alksender</p></section>
-                    <section><img src="/m5.jpg" alt="" width={40}/><p>Foad kasm</p></section>
-                    <section><img src="/m6.jpg" alt="" width={40}/><p>Well smeath</p></section>
-                    <section><img src="/m7.jpg" alt="" width={40}/><p>Nor Shareef</p></section>
-                    <section><img src="/m88.jpg" alt="" width={40}/><p>Sara Karina </p></section> */}
-                    </div>
-                  </div>
-
+                 
                
             </section>
      </span>
-     <ul>
+     {/* <ul>
       <li>اضافة الى القائمة</li>
       <li>اضف الى المفضلة</li>
       <li>ابلاغ عن مشكلة</li>
       <li>قد ترغب ايضا بمشاهدة</li>
-      </ul></div></div>
+      </ul>*/}</div></div> 
     </div>
   )
 }
