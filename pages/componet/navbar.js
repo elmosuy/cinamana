@@ -33,12 +33,7 @@ const Navbar = () => {
 
     }
 
-    // for(let i=0;i<arr.length;i++){
-    //   console.log(arr[i]);
-    // }
 
-
-// setfilter(filters)
 
   return (
     <div>
@@ -51,7 +46,7 @@ const Navbar = () => {
           <section className="navbar" id="navbar">
             <div className="searching">
               {" "}
-              <Image src="/cinamana/search.svg"  height={20} width={20} />{" "}
+              <Image src="/elmosuy/search.svg"  height={20} width={20} />{" "}
               <input
                 type="text"
                 name="search"
@@ -70,7 +65,7 @@ const Navbar = () => {
             </div>
 
             <div>
-              <img src="" /> <Link href="/">المشهورة</Link>
+              <img src="" /> <Link href="homemovie">المشهورة</Link>
             </div>
 
             <div>
@@ -115,12 +110,12 @@ const Navbar = () => {
               <img src="" /> <Link href="homemovie">الاشتراكات</Link>
             </div>
             <div className="sotialmedia">
-              <Image height={30} src="/cinamana/facebook.svg" width={30}  />
-              <Image height={30} src="/cinamana/instagram.svg" width={30}  />
-              <Image height={30} src="/cinamana/telegram.svg" width={30}  />
-              <Image height={30} src="/cinamana/twitter.svg" width={30}  />
-              <Image height={30} src="/cinamana/linkedin.svg" width={30}  />
-              <Image height={30} src="/cinamana/messenger.svg" width={30}  />
+              <Image height={30} src="/facebook.svg" width={30}  />
+              <Image height={30} src="/instagram.svg" width={30}  />
+              <Image height={30} src="/telegram.svg" width={30}  />
+              <Image height={30} src="/twitter.svg" width={30}  />
+              <Image height={30} src="/linkedin.svg" width={30}  />
+              <Image height={30} src="/messenger.svg" width={30}  />
             </div>
           </section>
         </div>
