@@ -69,7 +69,7 @@ const handeloutlain=()=>{
 
         </header>
           <Navbar/>
-          <Loginf />
+          <Loginf handeloutlain={handeloutlain} />
 
         <div onClick={handeloutlain}>{children}</div>
         

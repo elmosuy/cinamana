@@ -7,6 +7,7 @@ import { useRecoilState } from 'recoil';
 import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -49,7 +50,9 @@ const handelnextmovie=()=>{
         <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
           <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
-           
+               <div dir='rtl' className='shahd1'>
+                <Link href="/componet/navbar-list/1119"><p>شاهد الان</p></Link>
+               </div>
        </div>
       <div className='moviest'>
             <div className='mov' dir='rtl'>

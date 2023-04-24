@@ -1,33 +1,13 @@
 import React from 'react'
+import Home from '.'
 
 const DontFound = () => {
   return (
-  <div>  <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div>
-    <div>DontFound</div></div>
+  <div>  
+
+    <Home/>
+
+  </div>
   )
 }
 
