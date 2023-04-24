@@ -70,7 +70,7 @@ const Navbar = () => {
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المشهورة</Link>
+              <img src="" /> <Link href="/">المشهورة</Link>
             </div>
 
             <div>
