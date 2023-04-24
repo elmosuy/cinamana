@@ -2,7 +2,7 @@ import axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import React from 'react'
+import React, { useState } from 'react'
 import { useRecoilState } from 'recoil';
 // import { atomm } from './atom';
 import Footer from './componet/footer';
@@ -35,8 +35,12 @@ const handeloutlain=()=>{
   const nav=document.getElementById("navbar")
   nav.classList.remove("burgerdisplay")
 }
-
+const handelbody=()=>{
+  const bod=document.body
    
+}
+
+   const [color, setcolor] = useState()
 
 
 
@@ -57,6 +61,7 @@ const handeloutlain=()=>{
   </div>
                                  {/* <Image width={30} height={30} src="person.svg" alt=""  className='person'/> */}
           <div className='h3'>
+          
            <select name="" id="" className='languge'><option value="Arabic">Arabic</option>
            <option value="English">English</option>
            
@@ -64,14 +69,16 @@ const handeloutlain=()=>{
           
            <h3 onClick={handelloginf}>تسجيل الدخول </h3> 
 
+          <input className="color" type="color" name="" title='change color your website' id="" onChange={(e)=>{setcolor(e.target.value)}} />
 
           </div>
-
         </header>
-          <Navbar/>
+          <Navbar setcolor={setcolor}/>
           <Loginf handeloutlain={handeloutlain} />
 
-        <div onClick={handeloutlain}>{children}</div>
+
+        <div onClick={handeloutlain} style={{background:color}}>{children}</div>
+        
         
         <Footer/>
     </div>
