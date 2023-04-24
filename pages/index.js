@@ -49,11 +49,7 @@ const handelnextmovie=()=>{
         <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
           <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
-               <section dir='rtl' className='shahd'>
-                <h4 onClick={()=>router.push("./film/homemovie")}>شاهد الان</h4>
-                <h4>اضف الى القائمة</h4>
-                <h4>مشاهدة العرض التشويقي</h4>
-              </section>
+           
        </div>
       <div className='moviest'>
             <div className='mov' dir='rtl'>
