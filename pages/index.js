@@ -8,7 +8,6 @@ import LainOne from './componet/lainone';
 import LainTow from './componet/laintow';
 import LainTree from './componet/laintree';
 
-
 export default function Home() {
 
   const router = useRouter();
@@ -22,7 +21,6 @@ export default function Home() {
 
 
 
-console.log(img);
 const handelnextmovie=()=>{
  if(img>=6){
     setimg(1)
@@ -48,7 +46,7 @@ const handelnextmovie=()=>{
 
      
 
-         <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
+        <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
           <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
                <section dir='rtl' className='shahd'>
@@ -73,10 +71,7 @@ const handelnextmovie=()=>{
         <LainOne />
         <LainTow/>
         <LainTree/>
-    
        
-
-        
 
     </div>
   )
