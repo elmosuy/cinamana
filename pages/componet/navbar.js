@@ -5,7 +5,7 @@ import Movies from "./navbar-list/movies";
 import data from "../api/api_hollyood2.json"
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({setcolor}) => {
   const handelburger = () => {
     const navbar = document.getElementById("navbar");
     navbar.classList.toggle("burgerdisplay");
@@ -44,6 +44,7 @@ const Navbar = () => {
 
         <div>
           <section className="navbar" id="navbar">
+
             <div className="searching">
               {" "}
               <Image src="/elmosuy/search.svg"  height={20} width={20} />{" "}
@@ -54,6 +55,8 @@ const Navbar = () => {
                 onChange={(e)=>{setsearch(e.target.value)}}
 
               />
+
+
             </div>
        
             <div>
@@ -65,7 +68,7 @@ const Navbar = () => {
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المشهورة</Link>
+              <img src="" /> <Link href="/componet/navbar-list/movie_watch">المشهورة</Link>
             </div>
 
             <div>
@@ -86,29 +89,28 @@ const Navbar = () => {
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المسلسلات</Link>
+              <img src="" /> <Link href="/componet/series">المسلسلات</Link>
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">انمي</Link>
+              <img src="" /> <Link href="/componet/navbar-list/movie_Anami">انمي</Link>
             </div>
             <hr />
 
             <div>
-              <img src="" /> <Link href="homemovie">تابع المشاهدة</Link>
+              <img src="" /> <Link href="/componet/person">تابع المشاهدة</Link>
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المشاهدة لاحقا</Link>
+              <img src="" /> <Link href="/componet/person">المشاهدة لاحقا</Link>
             </div>
 
             <div>
-              <img src="" /> <Link href="homemovie">المفضلة</Link>
+              <img src="" /> <Link href="/componet/person">المفضلة</Link>
             </div>
 
-            <div>
-              <img src="" /> <Link href="homemovie">الاشتراكات</Link>
-            </div>
+   
+
             <div className="sotialmedia">
               <Image height={30} src="/facebook.svg" width={30}  />
               <Image height={30} src="/instagram.svg" width={30}  />
