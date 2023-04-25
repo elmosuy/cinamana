@@ -123,7 +123,7 @@
   .code {
     background: #111;
   }
-  .logo img {
+  .logo Image width={500} height={500} {
     filter: invert(1);
   }
 }
