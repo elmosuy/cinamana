@@ -1,87 +1,72 @@
-import axios from 'axios';
-import Head from 'next/head';
-import Link from 'next/link'
-import { useRouter } from 'next/router';
 import React, { useState } from 'react'
-import { useRecoilState } from 'recoil';
-// import { atomm } from './atom';
-import Footer from './componet/footer';
-import Navbar from './componet/navbar';
-import Loginf from './tools/loginfloat';
-import Image from 'next/image';
+import Letters from './Letters'
+import Header from './header'
+import Head from 'next/head'
+import Image from 'next/image'
 
 const Layout = ({children}) => {
+  const handelBorger = () => {
+    const nav = document.getElementById("letters");
+    nav.classList.toggle("show-letters");
+  };
+  const handelBorgeremove = () => {
+    const nav = document.getElementById("letters");
+    nav.classList.remove("show-letters");
+  };
+ const handelTheme = () => {
+    const nav = document.body;
+    nav.classList.toggle("show-theme");
+    const header=document.getElementById("header")
+    header.classList.toggle("show-theme-header");
+    const le=document.getElementById("letters")
+    le.classList.toggle("show-theme-list");
+    const all=document.getElementById("all")
+    all.classList.toggle("show-theme-all");
+    var text1=document.getElementById("text2")
+    text1.classList.toggle("text2")
+    
+ 
+  };
 
 
-
-
-
-
-
-  // const [incremnt,setincremnt]=useRecoilState(atomm)
-     const router = useRouter();
-
-
-
-     const handelloginf=()=>{
-      const login=document.getElementById("loginf")
-      login.classList.toggle("logindesplay")
-}
-const handeloutlain=()=>{
   
-  const login=document.getElementById("loginf")
-  login.classList.remove("logindesplay")
-
-  const nav=document.getElementById("navbar")
-  nav.classList.remove("burgerdisplay")
-}
-const handelbody=()=>{
-  const bod=document.body
-   
-}
-
-   const [color, setcolor] = useState()
-
-
-
   return (
-    <div>
+    <div className='dom'>
       <Head>
-      <link rel="icon" type="image/png" sizes="64x64" href="/cinamana/logot.png"/>
-      <title>Moon</title>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300&family=Kufam&family=Noto+Nastaliq+Urdu&family=Reem+Kufi&family=Reem+Kufi+Fun&display=swap" rel="stylesheet"/>         <title>
+            Dream | حلم
+          </title>
+          <link rel="icon" href="/github.svg" />
+
       </Head>
-        <header dir='rtl'>
-          
-          <div className='head' >        
-         
+      <section className="bouger-menu"   >
+      <label class="burger" for="burger" >
+            <input type="checkbox" className="check" id="burger" onClick={handelBorger} />
+            |||
+              </label>
+      </section>
+      
+        <div>
+            <Header handelTheme={handelTheme}/>
+        </div>
+        <div  dir='rtl'>
+            <Letters handelBorgeremove={handelBorgeremove} />
+        </div>
+        {/* <div className='media'>
+        <a href="https://github.com/elmosuy" title='elmosuy'><Image src="/github.svg" width={35} height={37} className='med' /></a>
+        <a href="https://www.linkedin.com/in/elmosuy/" ><Image src="/linkedin.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.instagram.com"> <Image src="/insta.svg" width={37} height={40} className='med'/></a>
+       <a href="https://www.facebook.com"> <Image src="/facebook.svg" width={40} height={40} className='med'/></a>
 
-
-          <Image className='logo' onClick={()=>router.push("/")} src="/cinamana/llb.png" width={90} height={35}/>
-     
-  </div>
-                                 {/* <Image width={30} height={30} src="person.svg" alt=""  className='person'/> */}
-          <div className='h3'>
-          
-           <select name="" id="" className='languge'><option value="Arabic">Arabic</option>
-           <option value="English">English</option>
-           
-           </select>
-          
-           <h3 onClick={handelloginf}>تسجيل الدخول </h3> 
-
-          <input className="color" type="color" name="" title='change color your website' id="" onChange={(e)=>{setcolor(e.target.value)}} />
-
-          </div>
-        </header>
-          <Navbar setcolor={setcolor}/>
-          <Loginf handeloutlain={handeloutlain} />
-
-
-        <div onClick={handeloutlain} style={{background:color}}>{children}</div>
         
-        
-        <Footer/>
+
+      </div> */}
+
+      <span onClick={handelBorgeremove} className='all-them' id='all'>
+        {children }
+        </span>
     </div>
+    
   )
 }
 

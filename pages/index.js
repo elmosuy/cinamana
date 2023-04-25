@@ -1,81 +1,44 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { useRecoilState } from 'recoil';
-
-import LainOne from './componet/lainone';
-import LainTow from './componet/laintow';
-import LainTree from './componet/laintree';
-import Link from 'next/link';
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
-
-  const router = useRouter();
-
- 
-    // executes forever
-
-  // const [inc,setinc]=useRecoilState(atomm)
-
-  const [img,setimg]=useState(1)
-
-
-
-const handelnextmovie=()=>{
- if(img>=6){
-    setimg(1)
-   }else{
-    setimg(img+1)
-   }}
-
-
-   const handelprevmovie=()=>{
-    if(img>1){
-       setimg(img-1)
-      }else{
-       setimg(6)
-      }}
-
-
   return (
-    <div  className='index'>
-      <Head>
-        <title>الصفحة الرئيسية</title>
-      
-      </Head>
-
-     
-
-        <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
-          <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
-            </div> 
-               <div dir='rtl' className='shahd1'>
-                <Link href="/componet/navbar-list/1119"><p>شاهد الان</p></Link>
-               </div>
-       </div>
-      <div className='moviest'>
-            <div className='mov' dir='rtl'>
-            <section onClick={()=>setimg(1)} style={{ backgroundImage: `url(/cinamana/movie1.jpg)`}}></section>
-            <section onClick={()=>setimg(2)} style={{ backgroundImage: `url(/cinamana/movie2.jpg)`}}></section>
-            <section onClick={()=>setimg(3)} style={{ backgroundImage: `url(/cinamana/movie3.jpg)`}}></section>
-            <section onClick={()=>setimg(4)} style={{ backgroundImage: `url(/cinamana/movie4.jpg)`}}></section>
-            <section onClick={()=>setimg(5)} style={{ backgroundImage: `url(/cinamana/movie5.jpg)`}}></section>
-            <section onClick={()=>setimg(6)} style={{ backgroundImage: `url(/cinamana/movie6.jpg)`}}></section>
-            
-        </div>
-      </div>
+    <div className='texts index'>
+    <div className='textindex ' name='index' id='text2' style={{color:""}}>
+          <div className='quran'>
+              <h2 dir='rtl'>
+              آية الكرسي
+              </h2>
+              <p dir='rtl'>
+              ﴿ الله لا إله إلا هو الحي القيوم لا تأخذه سنة ولا نوم له ما في السماوات وما في الأرض من ذا الذي يشفع عنده <span>إلا بإذنه يعلم ما بين أيديهم وما خلفهم ولا يحيطون بشيء من علمه إلا بما شاء </span>وسع كرسيه السماوات والأرض ولا يئوده حفظهما وهو العلي العظيم ﴾   [ البقرة: 255]
+              </p>
+          </div>
+          <div>
+          <div className='quran leftq' >
+              <h2 dir='ltr'>
+                سورة الكهف
+              </h2>
+              <p dir='rtl'>
+          <span>  أُولَـٰئِكَ لَهُمْ جَنَّاتُ عَدْنٍ تَجْرِي مِن تَحْتِهِمُ الْأَنْهَارُ يُحَلَّوْنَ فِيهَا مِنْ أَسَاوِرَ مِن ذَهَبٍ وَيَلْبَسُونَ ثِيَابًا خُضْرًا مِّن سُندُسٍ وَإِسْتَبْرَقٍ </span>مُّتَّكِئِينَ فِيهَا عَلَى الْأَرَائِكِ ۚ نِعْمَ الثَّوَابُ وَحَسُنَتْ مُرْتَفَقًا
 
 
-        <LainOne />
-        <LainTow/>
-        <LainTree/>
-       
 
+              </p>
+          </div>
+          <div>
+          <h2 dir='ltr'>
+                سورة البقرة
+              </h2>
+              <p dir='rtl'>
+           <span>   وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ </span>أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا لِي وَلْيُؤْمِنُوا بِي لَعَلَّهُمْ يَرْشُدُونَ
+                 </p>
+          </div>
+
+          </div>
     </div>
+      
+    </div>
+    
   )
-
-
-
-
 }

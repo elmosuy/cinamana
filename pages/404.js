@@ -1,13 +1,16 @@
 import React from 'react'
-import Home from '.'
 
 const DontFound = () => {
   return (
-  <div>  
+    <div className='texts'>
+    <div className='text'>
+      <p>دع الحرص على الدنيا.. وفي العيش فلا تطمع.. ولا تجمع من المال.. فلا تدري لمن تجمع
+                                                    </p>
 
-    <Home/>
-
-  </div>
+      <p>للامام علي عليه السلام</p>
+    </div>
+      
+    </div>
   )
 }
 
