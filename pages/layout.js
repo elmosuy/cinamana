@@ -12,7 +12,6 @@ import Loginf from "./tools/loginfloat";
 import Image from "next/image";
 
 const Layout = ({ children }) => {
-  // const [incremnt,setincremnt]=useRecoilState(atomm)
   const router = useRouter();
 
   const handelloginf = () => {
@@ -44,16 +43,9 @@ const Layout = ({ children }) => {
     const bod = (document.body.style.background = color);
   };
   useEffect(() => {
-    //  document.body.style.background="#012237"
     handelbody();
   });
-  // useEffect(() => {
-  //   var data_filter = dataSearch.filter(
-  //     (element) => element.title[0].toLocaleLowerCase() == search
-  //   );
 
-  //   setfil(data_filter);
-  // }, [search]);
 
   const filteredData = dataSearch.filter((el) => {
    
@@ -97,7 +89,7 @@ const Layout = ({ children }) => {
           />
           <div className="searcher" id="searcher">
             {filteredData.map((el) => (
-              <div className="search-list" dir="ltr">
+              <div className="search-list" dir="ltr" key={el.id}>
             <div>
                   <Image src={el.Image} width={30} height={50} alt="" />
                </div>
@@ -109,7 +101,6 @@ const Layout = ({ children }) => {
             ))}
           </div>{" "}
         </div>
-        {/* <Image width={30} height={30} src="person.svg" alt=""  className='person'/> */}
         <div className="h3">
           <select name="" id="" className="languge">
             <option value="Arabic">Arabic</option>
