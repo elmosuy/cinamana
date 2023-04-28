@@ -35,17 +35,11 @@ const Layout = ({ children }) => {
   };
 
   const [color, setcolor] = useState("");
-  const [search, setsearch] = useState();
+  const [search, setsearch] = useState("ch");
   const [fil, setfil] = useState([]);
   console.log(color);
 
-  const handelbody = () => {
-    const bod = (document.body.style.background = color);
-  };
-  useEffect(() => {
-    handelbody();
-  });
-
+ 
 
   const filteredData = dataSearch.filter((el) => {
    
@@ -56,7 +50,19 @@ const Layout = ({ children }) => {
 const [n, setn] = useState(10)
 const loop=()=>{
  setn(n+10)
+ 
 }
+
+const handelbody = () => {
+  const bod = (document.body.style.background = color);
+};
+useEffect(() => {
+  handelbody();
+
+});
+
+
+
       // {filteredData.map((el) => (
       //         <div className="search-list" dir="ltr" key={el.id}>
       //       <div>
@@ -97,25 +103,21 @@ const loop=()=>{
             onClick={handelsearch}
             placeholder="ابحث عن فلم او مسلسل"
             onChange={(e) => {
-              setsearch(e.target.value);
+              setsearch(e.target.value.toLowerCase());
             }}
           />
           <div className="searcher" id="searcher">
             {
               filteredData.slice(0,n).map((el)=>(
-                <div className="search-list" dir="ltr" key={el.id}>
-                      <div>
-                            <img src={el.Image} width={100}   />
-                         </div>
+                <div className="search-list" dir="ltr" key={el.id} onClick={() => router.push(`/componet/navbar-list/${el.id}`)}>
+                            <div><img src={el.Image} width={100}   /></div>
+                             <div> <p onClick={handelremovesearch}>{el.title}</p></div>
                      
-                        <div>
-                               <Link href={`/componet/navbar-list/${el.id}`}><p onClick={handelremovesearch}>{el.title}</p></Link>
-                       </div>
                        </div>
               ))
             }
             
-         <span onClick={loop}>Show more</span> </div>{" "}
+         <span onClick={loop} id="more">Show more</span> </div>{" "}
         </div>
         <div className="h3">
           <select name="" id="" className="languge">
