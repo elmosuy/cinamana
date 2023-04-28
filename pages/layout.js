@@ -51,10 +51,19 @@ const Layout = ({ children }) => {
    
                return el.title.toLowerCase().includes(search)
 
-    
-   
+     
 })
-
+      // {filteredData.map((el) => (
+      //         <div className="search-list" dir="ltr" key={el.id}>
+      //       <div>
+      //             <img src={el.Image} width={100}   />
+      //          </div>
+           
+      //          <div>
+      //               <Link href={`/componet/navbar-list/${el.id}`}><p onClick={handelremovesearch}>{el.title}</p></Link>
+      //          </div>
+      //         </div>
+      //       ))}
   return (
     <div>
       <Head>
@@ -88,17 +97,19 @@ const Layout = ({ children }) => {
             }}
           />
           <div className="searcher" id="searcher">
-            {filteredData.map((el) => (
-              <div className="search-list" dir="ltr" key={el.id}>
-            <div>
-                  <img src={el.Image} width={100}   />
-               </div>
-           
-               <div>
-                    <Link href={`/componet/navbar-list/${el.id}`}><p onClick={handelremovesearch}>{el.title}</p></Link>
-               </div>
-              </div>
-            ))}
+            {
+              filteredData.slice(0,10).map((el)=>(
+                <div className="search-list" dir="ltr" key={el.id}>
+                      <div>
+                            <img src={el.Image} width={100}   />
+                         </div>
+                     
+                        <div>
+                               <Link href={`/componet/navbar-list/${el.id}`}><p onClick={handelremovesearch}>{el.title}</p></Link>
+                       </div>
+                       </div>
+              ))
+            }
           </div>{" "}
         </div>
         <div className="h3">
