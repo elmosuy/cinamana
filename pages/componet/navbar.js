@@ -15,23 +15,19 @@ const Navbar = ({setcolor}) => {
     const filmes = document.getElementById("aflam");
     filmes.classList.toggle("show-film");
   };
-  const [search,setsearch] = useState('a')
-  const [fil,setfil] = useState([])
+
   const router = useRouter();   
   var arr = []
   
-  useEffect(() => {
+
     
+    //   for(let i=0;i<data.length;i++){
+    // if (data[i].title.includes('z')){
+    //     arr.push(i)
 
-  }, [])
-    
-      for(let i=0;i<data.length;i++){
-    if (data[i].title.includes('z')){
-        arr.push(i)
+    //   }
 
-      }
-
-    }
+    // }
 
 
 
@@ -47,14 +43,8 @@ const Navbar = ({setcolor}) => {
 
             <div className="searching">
               {" "}
-              <Image src="/elmosuy/search.svg"  height={20} width={20} />{" "}
-              <input
-                type="text"
-                name="search"
-                placeholder="ابحث عن فلم او مسلسل"
-                onChange={(e)=>{setsearch(e.target.value)}}
-
-              />
+              <Image src="/cinamana/search.svg"  height={20} width={20} />{" "}
+    
 
 
             </div>
@@ -80,7 +70,7 @@ const Navbar = ({setcolor}) => {
                <Link href="/componet/navbar-list/movies_new"><p> الافلام الجديدة</p></Link>
                <Link href="/componet/navbar-list/movies_Indian"><p> الافلام الهندية</p></Link>
                <Link href="/componet/navbar-list/movie_Asia"><p> الافلام اسيا</p></Link>
-               <Link href="/componet/series"><p> الافلام التركية</p></Link>
+               <Link href="/componet/navbar-list/movies_Turkish"><p> الافلام التركية</p></Link>
                <Link href="/componet/navbar-list/movie_Syrian"><p> الافلام السوريا</p></Link>
                <Link href="/componet/navbar-list/movie_Lebnon"><p> الافلام اللبنانية</p></Link>
 

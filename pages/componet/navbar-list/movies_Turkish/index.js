@@ -80,10 +80,10 @@ const Movies = () => {
                 onClick={() => router.push(`/componet/navbar-list/movies_Turkish/${i.id}`)}
               >
               
-                <p>{i.IMDb}7.2</p>
-                <Image width={300} height={200} src={i.Image}></Image>
+               
+                <Image width={300} height={200} src={i.Image}> <p>{i.IMDb}7.2</p></Image>
               </div>
-              <p>{i.title}</p>
+              
               <p className="type-movie">كوميدي 2022, دراما</p>
             </div>
           </section>

@@ -76,7 +76,6 @@ const Movies = () => {
       <section  key={i.id} className='a-en'>
           <div className={i.id}>
             <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
-           <p>{i.IMDb}</p>
             <Image  width={300} height={200}   src={i.Image}></Image>
            
             </div>

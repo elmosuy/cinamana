@@ -80,7 +80,6 @@ const Movies = () => {
                 onClick={() => router.push(`/componet/navbar-list/movie_Lebnon/${i.id}`)}
               >
                
-                <p>{i.IMDb}7.2</p>
                 <Image width={300} height={200} src={i.Image}></Image>
               </div>
               <p>{i.title}</p>
