@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
             {filteredData.map((el) => (
               <div className="search-list" dir="ltr">
             <div>
-                  <img src={el.Image} width={30} alt="" />
+                  <Image src={el.Image} width={30} height={50} alt="" />
                </div>
            
                <div>
