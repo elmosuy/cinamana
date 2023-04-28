@@ -53,6 +53,10 @@ const Layout = ({ children }) => {
 
      
 })
+const [n, setn] = useState(10)
+const loop=()=>{
+ setn(n+10)
+}
       // {filteredData.map((el) => (
       //         <div className="search-list" dir="ltr" key={el.id}>
       //       <div>
@@ -98,7 +102,7 @@ const Layout = ({ children }) => {
           />
           <div className="searcher" id="searcher">
             {
-              filteredData.slice(0,10).map((el)=>(
+              filteredData.slice(0,n).map((el)=>(
                 <div className="search-list" dir="ltr" key={el.id}>
                       <div>
                             <img src={el.Image} width={100}   />
@@ -110,7 +114,8 @@ const Layout = ({ children }) => {
                        </div>
               ))
             }
-          </div>{" "}
+            
+         <span onClick={loop}>Show more</span> </div>{" "}
         </div>
         <div className="h3">
           <select name="" id="" className="languge">
