@@ -114,6 +114,14 @@ header .search{
   overflow: scroll;
   
 }
+.searcher span{
+  color: #c71e00;
+  cursor: pointer;
+  top: 10px ;
+  width: 100%;
+  position: relative;
+  right:40% ;
+}
 .searcher p{
   cursor: pointer;
 }
@@ -753,6 +761,7 @@ top: 90px;
 /* page home movie  */
 .vid{ 
   width: 100%;
+  height: 150vh;
 
 }
 .vid video{
@@ -1022,6 +1031,9 @@ height: 20px;
   width: 150px;
   border-radius: 0px;
 }
+.vid{
+  height: 115vh;
+}
 .vid iframe{
   position: relative;
   bottom: 4.5px;
@@ -1082,7 +1094,7 @@ border-radius: 40px;
  }
  .searcher{
   width: 220px;
-  right: 25px;
+  right: 30px;
  }
  .searcher p{
   width: 60%;
