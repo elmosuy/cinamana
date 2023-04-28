@@ -10,10 +10,7 @@ const Movie = () => {
   const router = useRouter()
   const { id } = router.query
 
-//     const [num, setnum] = useState()
-//   useEffect(() => {
-//    setnum(id)
-//   }, [id])
+
   return (
     <div className='vid'>
     

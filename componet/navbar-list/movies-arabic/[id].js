@@ -7,10 +7,7 @@ import Lain4 from "../../lain4"
 
 
 const Movie9 = () => {
-  const [num, setnum] = useState()
-useEffect(() => {
- setnum(id)
-}, [id])
+
 
   const router = useRouter()
   const { id } = router.query
@@ -18,7 +15,7 @@ useEffect(() => {
   return (
     <div className='vid'>
     
-    <iframe src={data[num||1].Link} frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
+    <iframe src={data[id||1].Link} frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width={600} height={600} controls='true' ></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
