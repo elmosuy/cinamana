@@ -1070,7 +1070,7 @@ border-radius: 40px;
  
  }
  header .search{
-  width: 230px;
+  width: 220px;
   position: relative;
   right: 30px;
  }
@@ -1081,8 +1081,11 @@ border-radius: 40px;
 
  }
  .searcher{
-  width: 230px;
-  right: 30px;
+  width: 220px;
+  right: 25px;
+ }
+ .searcher p{
+  width: 60%;
  }
 }
 
