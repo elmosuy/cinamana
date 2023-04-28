@@ -14,7 +14,6 @@ const Movie = () => {
   useEffect(() => {
    setnum(id)
   }, [id])
-   console.log(id-1);
   return (
     <div className='vid'>
     
