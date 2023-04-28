@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 // import { atomm } from './atom';
-import dataSearch from "./api/search_en.json";
+import dataSearch from "./api/api_hollywood.json";
 import Footer from "./componet/footer";
 import Navbar from "./componet/navbar";
 import Loginf from "./tools/loginfloat";
