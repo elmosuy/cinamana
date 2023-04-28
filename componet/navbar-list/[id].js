@@ -10,14 +10,14 @@ const Movie = () => {
   const router = useRouter()
   const { id } = router.query
 
-    const [num, setnum] = useState()
-  useEffect(() => {
-   setnum(id)
-  }, [id])
+//     const [num, setnum] = useState()
+//   useEffect(() => {
+//    setnum(id)
+//   }, [id])
   return (
     <div className='vid'>
     
-    <iframe src={data[num||1].Link} frameborder="0" allowFullScreen controls='true'  width={600} height={600}></iframe>
+    <iframe src={data[id||1].Link} frameborder="0" allowFullScreen controls='true'  width={600} height={600}></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
