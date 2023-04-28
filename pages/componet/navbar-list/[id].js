@@ -14,11 +14,10 @@ const Movie = () => {
   useEffect(() => {
    setnum(id)
   }, [id])
-   console.log(id-1);
   return (
     <div className='vid'>
     
-    <iframe src={data[num||1].Link} frameborder="0" allowFullScreen controls='true'  width={600} height={600}></iframe>
+    <iframe src={data[num].Link} frameborder="0" allowFullScreen controls='true'  width={600} height={600}></iframe>
       <div className='imgvideo' dir='rtl'>
         <div className='likeing' >
           <section>
