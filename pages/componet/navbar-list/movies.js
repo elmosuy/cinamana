@@ -14,18 +14,17 @@ const Movies = () => {
     rangeType.classList.toggle("show-range");
   };
 const [post, setpost] = useState([])
-const scroll=()=>{
-  useEffect(() => {
+ const scroll=()=>{
     setTimeout(()=>{
       setpost(datas)
-     }, 6000)
-  
+     }, 6000)}
+  useEffect(() => {
 
- 
+      scroll()
+
   })
   
 
-}
 scroll()
 
  

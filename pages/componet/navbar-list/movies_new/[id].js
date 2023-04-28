@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import data from '../../../api/movie_New_2023.json'
 
 

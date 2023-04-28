@@ -9,11 +9,11 @@ import Laintree from "../laintree"
 const Movie = () => {
   const router = useRouter()
   const { id } = router.query
-  const [num, setnum] = useState()
+
+    const [num, setnum] = useState()
   useEffect(() => {
    setnum(id)
   }, [id])
-  
    console.log(id-1);
   return (
     <div className='vid'>
