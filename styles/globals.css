@@ -69,7 +69,7 @@ header .search{
   border: none;
   transition: .6s ease all;
   padding-right: 10px;
-  width: 400px;
+  width: 750px;
   height: 40px;
    background: none;
   /*height: 36px;
@@ -106,7 +106,7 @@ header .search{
 }
 .searcher{
   position: absolute;
-  top: 45.5px;
+  top: 44px;
   background-color: rgb(10, 21, 32);
   width: 100%;
   height: 0px;
@@ -115,12 +115,19 @@ header .search{
   
 }
 .searcher span{
-  color: #c71e00;
-  cursor: pointer;
-  top: 10px ;
+  /* color: #c71e00;
+  bottom: 0;
   width: 100%;
   position: relative;
-  right:40% ;
+  right:40% ; */
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: end;
+  cursor: pointer;
+
+
+
 }
 .searcher p{
   cursor: pointer;
@@ -128,22 +135,19 @@ header .search{
 .searcher .search-list{
  text-align: center;
  display: flex;
- gap: 5px;
+ 
   
 
 }
-.searcher .search-list p{
-  margin-left: 35px;
-}
+
 .show-search{
-  height: 240px;
+  height: 440px;
 }
 
 header .search:focus{
   border-radius: 5px;
   /* width: 100%; */
   outline: none;
-  box-shadow: 0px 0px 5px rgb(0, 170, 255),0px 0px 6px rgb(10, 255, 132),0px 0px 8px rgb(0, 195, 255) ;
 
   
   
@@ -761,7 +765,7 @@ top: 90px;
 /* page home movie  */
 .vid{ 
   width: 100%;
-  height: 150vh;
+  height: 190vh;
 
 }
 .vid video{
@@ -851,7 +855,29 @@ top: 90px;
   top:45px;
   text-align: center;
 }
+/* component search movies */
+.search-list{
+  display: flex;
+  
+  
+}
 
+.search-list div:nth-child(2) p{
+  
+  position: relative;
+  left: 30px;
+  
+
+}
+
+
+.searcher .search-list{ 
+  gap: 90px; font-size: 20px;
+}
+
+.searcher .search-list:hover{
+  background-color: #0c0c0c;
+}
 
 @media only screen and (max-width:700px) {
   .leftright{
@@ -1032,7 +1058,7 @@ height: 20px;
   border-radius: 0px;
 }
 .vid{
-  height: 115vh;
+  height: 110vh;
 }
 .vid iframe{
   position: relative;
@@ -1084,21 +1110,29 @@ border-radius: 40px;
  header .search{
   width: 220px;
   position: relative;
-  right: 30px;
+  right: 00px;
  }
- .searcher .search-list{
-  display: flex;
-  text-align: left;
- 
 
- }
  .searcher{
-  width: 220px;
-  right: 30px;
+  top:45px;  
+  width: 300px;
+  left: -150px;
  }
  .searcher p{
-  width: 60%;
+  font-size: small;
+  position: relative;
+  right: 10px;
  }
+
+ .search-list div{
+  height: 70px;
+ }
+ .search-list p{
+  position: relative;
+  top: 15px;
+  text-align: left;
+ }
+
 }
 
 
@@ -1337,6 +1371,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
+
 .serch-movies select option{
   background-color: #07212e;
   width: 100px;
@@ -1347,34 +1382,4 @@ body {
 }
 .navbar input{
   color: #a0a2a2;
-}
-.search-list{
-  display: flex;
-}
-.search-list img{
-  width: 70px ;
-  height: 40px;
-
-}
-.search-list div:nth-child(2) p{
-  font-size: small;
-  position: relative;
-  left: 50px;
-  
-
-}
-.search-list div:nth-child(2){
-  display: flex;
-  gap: 20px;
-
-}
-.search-list div:nth-child(2) p:nth-child(2){
-  background: #c71e00;
-  border-radius: 5px;
-  width: 60px;
-}
-.search-list div:nth-child(2) p:nth-child(2)::after{
-  content: ">";
-  font-size: larger;
-  font-weight: 300;
 }
