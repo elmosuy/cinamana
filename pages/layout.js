@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
             {filteredData.map((el) => (
               <div className="search-list" dir="ltr" key={el.id}>
             <div>
-                  <Image src={el.Image} width={30} height={50} alt="movies name" />
+                  <img src={el.Image} width={100}   />
                </div>
            
                <div>
