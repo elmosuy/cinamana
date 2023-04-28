@@ -65,12 +65,14 @@ header .h3{
   position: absolute;
   transform: translateY(10px) translateX(10px);
 }
-.navbar input:nth-child(2){
+header .search{
   border: none;
   transition: .6s ease all;
   padding-right: 10px;
-  background: none;
-  height: 36px;
+  width: 400px;
+  height: 40px;
+   background: none;
+  /*height: 36px;
   position: relative;
   left: 10px;
   text-align: right;
@@ -78,8 +80,9 @@ header .h3{
  width: 40px;
  margin-right: 200px;
   
-  font-size: 16px; 
-   box-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 15px rgba(0, 0, 0, 0.578) ;
+   box-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 15px rgba(0, 0, 0, 0.578) ; */
+  font-size: 18px; 
+  color: #a0a2a2;
 
 
 }
@@ -90,16 +93,51 @@ border-radius: 50%;
 background:transparent;
 
 }
-.navbar input::placeholder{
+header .search{
   
   padding-left: 40px;
+
+
  
 }
-.navbar input:nth-child(2):focus{
-  border-radius: 5px;
+.searchi{
+  position: relative;
+
+}
+.searcher{
+  position: absolute;
+  top: 45.5px;
+  background-color: rgb(10, 21, 32);
   width: 100%;
+  height: 0px;
+  color: #f6f6f6;
+  overflow: scroll;
+  
+}
+.searcher p{
+  cursor: pointer;
+}
+.searcher .search-list{
+ text-align: center;
+ display: flex;
+ gap: 5px;
+  
+
+}
+.searcher .search-list p{
+  margin-left: 35px;
+}
+.show-search{
+  height: 240px;
+}
+
+header .search:focus{
+  border-radius: 5px;
+  /* width: 100%; */
   outline: none;
   box-shadow: 0px 0px 5px rgb(0, 170, 255),0px 0px 6px rgb(10, 255, 132),0px 0px 8px rgb(0, 195, 255) ;
+
+  
   
 }
 
@@ -604,7 +642,7 @@ padding-right: 20px;
 
   .anami .laigroup{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 10px;
     justify-content: center;
 
@@ -875,7 +913,12 @@ top: 90px;
     width: 90%;
 
   }
-  
+  .searching{
+    width: 100px;
+  }
+  .lainvid h2{
+    font-size: 16px;
+  }
   .background section{
     position: relative; 
     transform: translateY(-100px);
@@ -909,17 +952,13 @@ top: 90px;
     } 
     
     
-.h3{
- width: 200px;
- font-size:10px;
- position: relative;
- left: 20px;
- display: flex;
- color: #ffffff;
-
-}.h3 select{
+.h3 select{
   transform: translateY(-10px) ;
+  display: none;
   
+}
+.h3 h3{
+  display: none;
 }
 .floot{
 height: 20px;
@@ -1017,10 +1056,34 @@ border-radius: 40px;
   
 
 }
-header .h3{
+/* header .h3{
   font-size: 7px;
   align-items: center;
-}
+} */
+.h3{
+  width: 200px;
+  font-size:10px;
+  position: relative;
+  left: 20px;
+  display: none;
+  /* color: #ffffff; */
+ 
+ }
+ header .search{
+  width: 230px;
+  position: relative;
+  right: 30px;
+ }
+ .searcher .search-list{
+  display: flex;
+  text-align: left;
+ 
+
+ }
+ .searcher{
+  width: 230px;
+  right: 30px;
+ }
 }
 
 
@@ -1266,4 +1329,37 @@ body {
 }
 .laigroup .limg{
   border-radius: 20px;
+}
+.navbar input{
+  color: #a0a2a2;
+}
+.search-list{
+  display: flex;
+}
+.search-list img{
+  width: 70px ;
+  height: 40px;
+
+}
+.search-list div:nth-child(2) p{
+  font-size: small;
+  position: relative;
+  left: 50px;
+  
+
+}
+.search-list div:nth-child(2){
+  display: flex;
+  gap: 20px;
+
+}
+.search-list div:nth-child(2) p:nth-child(2){
+  background: #c71e00;
+  border-radius: 5px;
+  width: 60px;
+}
+.search-list div:nth-child(2) p:nth-child(2)::after{
+  content: ">";
+  font-size: larger;
+  font-weight: 300;
 }
