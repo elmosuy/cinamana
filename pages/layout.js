@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 // import { atomm } from './atom';
-import dataSearch from "./api/api_hollywood.json";
+import dataSearch from "./api/search_en.json";
 import Footer from "./componet/footer";
 import Navbar from "./componet/navbar";
 import Loginf from "./tools/loginfloat";
@@ -96,6 +96,15 @@ useEffect(() => {
               setsearch(e.target.value.toLowerCase());
             }}
           />
+      
+
+        <svg viewBox="0 0 512 512" width={25} className="ionicon" xmlns="http://www.w3.org/2000/svg">
+            <title>Search</title>
+            <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+            <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
+        </svg>
+  
+
           <div className="searcher" id="searcher">
             {
               filteredData.slice(0,n).map((el)=>(
