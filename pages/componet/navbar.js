@@ -70,7 +70,7 @@ const Navbar = ({setcolor}) => {
                <Link href="/componet/navbar-list/movies_new"><p> الافلام الجديدة</p></Link>
                <Link href="/componet/navbar-list/movies_Indian"><p> الافلام الهندية</p></Link>
                <Link href="/componet/navbar-list/movie_Asia"><p> الافلام اسيا</p></Link>
-               <Link href="/componet/navbar-list/movies_Turkish"><p> الافلام التركية</p></Link>
+               <Link href="/componet/series"><p> الافلام التركية</p></Link>
                <Link href="/componet/navbar-list/movie_Syrian"><p> الافلام السوريا</p></Link>
                <Link href="/componet/navbar-list/movie_Lebnon"><p> الافلام اللبنانية</p></Link>
 
