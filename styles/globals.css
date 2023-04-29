@@ -96,6 +96,7 @@ background:transparent;
 header .search{
   
   padding-left: 40px;
+  
 
 
  
@@ -1429,7 +1430,7 @@ border-radius: 40px;
  header .search{
   width: 220px;
   position: relative;
-  right: 00px;
+  font-size: 13px;
  }
 
  .searcher{
@@ -1473,6 +1474,7 @@ border-radius: 40px;
 .loading div{
   position: relative;
   bottom: 60px;
+  right: 40px;
 }
 .spinner {
   width: 80px;
