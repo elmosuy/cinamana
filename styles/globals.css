@@ -101,7 +101,8 @@ background:transparent;
 header .search{
   
   padding-left: 40px;
-  
+  border: .5px solid;
+  border-radius: 15px;
 
 
  
@@ -1308,8 +1309,9 @@ body {
     .moviest {
       display: none;
     }
+   
      header input::placeholder{
-      color: rgb(255, 255, 255);
+      color: rgb(118, 115, 115);
       
     }
     .loginf{
@@ -1408,10 +1410,9 @@ height: 20px;
   
 }
 .shahd1{
-  background-color: #be0505;
   padding:  5px 10px;
   right: 40px;
-  bottom: -60px;
+  bottom: -30px;
 
   
 }
@@ -1444,7 +1445,7 @@ border-radius: 40px;
  
  }
  header .search{
-  width: 220px;
+  width: 180px;
   position: relative;
   font-size: 13px;
  }
@@ -1452,7 +1453,7 @@ border-radius: 40px;
  .searcher{
   top:45px;  
   width: 300px;
-  left: -150px;
+  left: -120px;
  }
  .searcher p{
   font-size: small;
@@ -1514,7 +1515,7 @@ top: 3px;
 }
 header .ionicon{
   position: absolute;
-  left: -80px;
+  left: -70px;
   width: 20px;
   top: 12px;
 }
