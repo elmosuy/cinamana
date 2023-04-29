@@ -63,17 +63,7 @@ useEffect(() => {
 
 
 
-      // {filteredData.map((el) => (
-      //         <div className="search-list" dir="ltr" key={el.id}>
-      //       <div>
-      //             <img src={el.Image} width={100}   />
-      //          </div>
-           
-      //          <div>
-      //               <Link href={`/componet/navbar-list/${el.id}`}><p onClick={handelremovesearch}>{el.title}</p></Link>
-      //          </div>
-      //         </div>
-      //       ))}
+
   return (
     <div>
       <Head>
@@ -109,9 +99,9 @@ useEffect(() => {
           <div className="searcher" id="searcher">
             {
               filteredData.slice(0,n).map((el)=>(
-                <div className="search-list" dir="ltr" key={el.id} onClick={() => router.push(`/componet/navbar-list/${el.id}`)}>
-                            <div><img src={el.Image} width={100}   /></div>
-                             <div> <p onClick={handelremovesearch}>{el.title}</p></div>
+                <div className="search-list" dir="ltr" key={el.id}  >
+                            <div onClick={handelremovesearch}><img src={el.Image} onClick={() => router.push(`/componet/navbar-list/${el.id}`)} width={100}   /></div>
+                             <div onClick={handelremovesearch}> <p onClick={() => router.push(`/componet/navbar-list/${el.id}`)} >{el.title}</p></div>
                      
                        </div>
               ))
