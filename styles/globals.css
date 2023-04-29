@@ -69,7 +69,7 @@ header .search{
   border: none;
   transition: .6s ease all;
   padding-right: 10px;
-  width: 300px;
+  width: 500px;
   height: 40px;
    background: none;
   /*height: 36px;
@@ -1446,7 +1446,7 @@ border-radius: 40px;
  header .search{
   width: 180px;
   position: relative;
-  border: .5px solid;
+    border: .5px solid;
 
   font-size: 13px;
  }
@@ -1494,13 +1494,14 @@ border-radius: 40px;
   position: relative;
   bottom: 60px;
   right: 60px;
+  color: white;
 }
 .spinner {
   width: 80px;
   height: 80px;
 }
 .spinner2{
-  position: relative;
+  
 }
 .loading h2{
 font-size: 60px;
@@ -1509,6 +1510,7 @@ position: relative;
 top: 3px;
 
 }
+
 .loading p{
   font-size: 10px;
   bottom: 50px;
