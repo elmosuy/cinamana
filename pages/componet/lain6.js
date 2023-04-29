@@ -25,13 +25,13 @@ const Lain6 = () => {
 
           <div className='laigroup'>
             
-            <Link href="/componet/navbar-list/anami_group/anamione"><Image className='limg' width={350} height={200} src="https://e.qfilm.tv/uploads/thumbs/8fe610e22-1.jpg"/></Link>
+            <Link href="/componet/navbar-list/anami_group/anamione"><Image className='limg' width={320} height={200} src="https://e.qfilm.tv/uploads/thumbs/8fe610e22-1.jpg"/></Link>
            
-            <Link href="/componet/navbar-list/anami_group/anamitoy"><Image className='limg' width={350} height={200} src="https://e.qfilm.tv/uploads/thumbs/7cfedef3d-1.jpg"/></Link>
+            <Link href="/componet/navbar-list/anami_group/anamitoy"><Image className='limg' width={320} height={200} src="https://e.qfilm.tv/uploads/thumbs/7cfedef3d-1.jpg"/></Link>
          
-            <Link href="/componet/navbar-list/anami_group/anamilion"><Image className='limg' width={350} height={200} src="https://e.qfilm.tv/uploads/thumbs/78782d9f9-1.jpg"/></Link>
+            <Link href="/componet/navbar-list/anami_group/anamilion"><Image className='limg' width={320} height={200} src="https://e.qfilm.tv/uploads/thumbs/78782d9f9-1.jpg"/></Link>
            
-            <Link href="/componet/navbar-list/anami_group/anamish"><Image className='limg' width={350} height={200} src="https://e.qfilm.tv/uploads/thumbs/28beb4f3d-1.jpg"/></Link>
+            <Link href="/componet/navbar-list/anami_group/anamish"><Image className='limg' width={320} height={200} src="https://e.qfilm.tv/uploads/thumbs/28beb4f3d-1.jpg"/></Link>
 
           </div>
            
