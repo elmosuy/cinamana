@@ -850,7 +850,7 @@ padding-right: 20px;
   
   position: relative;
   left: 30px;
-  
+  text-align: left;
 
 }
 
@@ -1050,6 +1050,19 @@ padding-right: 20px;
   font-size: larger;
   right: 70px;
   bottom: 30px;
+}
+.shahd1 p{
+  background-color: red;
+  padding: 0 5px  0px   5px;
+  height: 50px;
+  width: 90px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  font-size: large;
+ 
 }
 body {
   color: white;
@@ -1457,6 +1470,10 @@ border-radius: 40px;
   justify-content: center;
 }
 /* loading page */
+.loading div{
+  position: relative;
+  bottom: 60px;
+}
 .spinner {
   width: 80px;
   height: 80px;
