@@ -1475,7 +1475,7 @@ border-radius: 40px;
 .loading div{
   position: relative;
   bottom: 60px;
-  right: 40px;
+  right: 60px;
 }
 .spinner {
   width: 80px;
