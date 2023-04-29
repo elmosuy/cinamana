@@ -12,6 +12,7 @@ import LainTree from './componet/laintree';
 import Link from 'next/link';
 import Lain6 from './componet/lain6';
 import Lain7 from './componet/lain7';
+import Loading from './componet/looding';
 
 
 export default function Home() {
@@ -50,7 +51,7 @@ const handelnextmovie=()=>{
       
       </Head>
 
-     
+      <Loading/>
 
         <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
           <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
@@ -59,19 +60,9 @@ const handelnextmovie=()=>{
                 <Link href="/componet/navbar-list/1119"><p>شاهد الان</p></Link>
                </div>
        </div>
-      <div className='moviest'>
-            <div className='mov' dir='rtl'>
-            <section onClick={()=>setimg(1)} style={{ backgroundImage: `url(/cinamana/movie1.jpg)`}}></section>
-            <section onClick={()=>setimg(2)} style={{ backgroundImage: `url(/cinamana/movie2.jpg)`}}></section>
-            <section onClick={()=>setimg(3)} style={{ backgroundImage: `url(/cinamana/movie3.jpg)`}}></section>
-            <section onClick={()=>setimg(4)} style={{ backgroundImage: `url(/cinamana/movie4.jpg)`}}></section>
-            <section onClick={()=>setimg(5)} style={{ backgroundImage: `url(/cinamana/movie5.jpg)`}}></section>
-            <section onClick={()=>setimg(6)} style={{ backgroundImage: `url(/cinamana/movie6.jpg)`}}></section>
-            
-        </div>
-      </div>
+ 
 
-
+       
         <LainOne />
         <LainTow/>
         <LainTree/>

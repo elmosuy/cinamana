@@ -13,15 +13,15 @@ import Image from "next/image";
 
 const Layout = ({ children }) => {
   const router = useRouter();
-
-  const handelloginf = () => {
-    const login = document.getElementById("loginf");
-    login.classList.toggle("logindesplay");
-  };
   const handelsearch = () => {
     const search = document.getElementById("searcher");
     search.classList.add("show-search");
   };
+  const handelloginf = () => {
+    const login = document.getElementById("loginf");
+    login.classList.toggle("logindesplay");
+  };
+
   const handelremovesearch = () => {
     const search = document.getElementById("searcher");
     search.classList.remove("show-search");
@@ -43,10 +43,10 @@ const Layout = ({ children }) => {
 
   const filteredData = dataSearch.filter((el) => {
    
-               return el.title.toLowerCase().includes(search)
+               return el.title.toLowerCase().includes(search)})
 
      
-})
+
 const [n, setn] = useState(10)
 const loop=()=>{
  setn(n+10)
@@ -143,7 +143,7 @@ useEffect(() => {
       <Loginf handeloutlain={handeloutlain} />
           
       <div onClick={handeloutlain}><div onClick={handelremovesearch}>{children}</div></div>
-
+     
       <Footer />
     </div>
   );
