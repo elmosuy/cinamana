@@ -69,7 +69,7 @@ header .search{
   border: none;
   transition: .6s ease all;
   padding-right: 10px;
-  width: 750px;
+  width: 550px;
   height: 40px;
    background: none;
   /*height: 36px;
@@ -85,6 +85,11 @@ header .search{
   color: #a0a2a2;
 
 
+}
+header .ionicon{
+  position: absolute;
+  left: 30px;
+  top: 7px;
 }
 .navbar input:nth-child(3){
 width: 20px;
@@ -527,11 +532,17 @@ padding-right: 20px;
     filter: opacity(.8); 
     top: 50px;
     margin-bottom:120px;
-    background: rgba(2, 53, 68, 0.582);
+    /* background: url(/video.webm); */
+    /* background: rgba(2, 53, 68, 0.582); */
     background-repeat: no-repeat;
     background-size: cover;
 }
+#background-video {
 
+  min-width: 100%; 
+  min-height: 100%;
+
+} 
   .leftright img{
     background: rgba(2, 2, 2, 0.452);
     border-radius: 50%;
@@ -1396,7 +1407,7 @@ height: 20px;
   bottom: 4.5px;
   
 }
-.shahd1 p{
+.shahd1{
   background-color: #be0505;
   padding:  5px 10px;
   width: 100px;
@@ -1405,7 +1416,7 @@ height: 20px;
   align-items: center;
   border-radius: 30px;
   position: absolute;
-  right: -50px;
+  right: 50px;
   bottom: -80px;
 
   
@@ -1506,6 +1517,11 @@ top: 3px;
   font-size: 10px;
   bottom: 50px;
   
+}
+header .ionicon{
+  position: absolute;
+  left: -120px;
+  top: 7px;
 }
 
 }
