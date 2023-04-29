@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
   };
 
   const [color, setcolor] = useState("");
-  const [search, setsearch] = useState("ch");
+  const [search, setsearch] = useState("ab");
   const [fil, setfil] = useState([]);
   console.log(color);
 
