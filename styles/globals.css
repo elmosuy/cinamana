@@ -1467,10 +1467,14 @@ border-radius: 40px;
 .loading h2{
 font-size: 60px;
 margin: 20px;
+position: relative;
+top: 5px;
 
 }
 .loading p{
   font-size: 10px;
+  bottom: 50px;
+  
 }
 
 }
