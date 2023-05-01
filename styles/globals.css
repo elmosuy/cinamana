@@ -1309,6 +1309,12 @@ body {
   header .search{
     width: 240px;
   }
+  header .search:focus{
+    
+  }
+  .fullhome{
+  margin-right: 20px;    
+  }
 }
 @media only screen and (max-width:700px) {
   .leftright{
@@ -1405,7 +1411,6 @@ body {
       height: 30%;
     }
     .imgvideo img{
-     margin-right: 10px; 
      margin-top: 30px;
      width: 300px;
      
@@ -1523,14 +1528,27 @@ font-size: 20px;
   /* color: #ffffff; */
  
  }
+
+header span{
+ position: relative;
+ width: 180px;
+ left: 20px;
+}
  header .search{
-  width: 180px;
-  position: relative;
-    border: .5px solid;
-
-  font-size: 13px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset;
+    font-size: 13px;
  }
-
+ header input:focus{
+  width: 200%;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset;
+}
+header span .ionicon{
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
  .searcher{
   top:45px;  
   width: 300px;
@@ -1613,8 +1631,9 @@ header .ionicon{
 }
 /* coments */
 .comment{
-  width: 98%;
+  width: 93%;
   font-size: small;
+  margin-right: 15px;
   justify-content: center;
   left: 2px;
 }
@@ -1641,6 +1660,7 @@ header .ionicon{
   bottom: 30px;
  
 }
+
 
 }
 @media only screen and (max-width:280px) {
