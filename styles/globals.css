@@ -108,6 +108,7 @@ header .search{
 }
 .viewes{
   margin-top: 15px;
+  
   border-bottom:rgb(143, 142, 142) 2px solid;
 }
 .viewer{
@@ -810,11 +811,13 @@ padding-right: 20px;
 .comment{
   width: 500px;
  margin: 5px;
+ margin-bottom: 6px;
   padding: 10px;
-  background-color: rgba(1, 23, 42, 0.948);
-
-
-
+  /* background-color: rgba(1, 23, 42, 0.948); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
+}
+.comment:hover{
+  box-shadow: none;
 }
 .comments input{
   width: 440px;
@@ -831,6 +834,7 @@ padding-right: 20px;
 }
 .comment input {
   outline: none;
+  border: none;
 }
 .comment section:nth-child(1){
   display: flex;
@@ -867,9 +871,9 @@ padding-right: 20px;
   cursor: pointer;
   /* box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0); */
   height: 29px;
-  background-color: rgba(1, 23, 42, 0.948);
   margin-left: .5px;
-  border: .5px solid black;
+  box-shadow:  0 0 20px rgba(0, 0, 0, 0.605);
+  border: .3px solid rgba(0, 0, 0, 0.727);
   text-align: center;
   align-items: center;
   display: flex;
@@ -887,8 +891,8 @@ padding-right: 20px;
   border-radius:20px 0   0 20px ;
 }
 .likeing section:hover{
-  background-color: rgba(0, 0, 55, 0.556);
-  transform: scale(1.13);
+  transform: scale(1.10);
+  box-shadow: none;
 }
 
 /* select search type movies */
@@ -1472,7 +1476,7 @@ height: 20px;
   font-weight: 300;
 }
  .navbar{
-  width: 60%;
+  width: 200px;
  }
 .lainone .item{
   width: 150px;
@@ -1620,6 +1624,7 @@ header .ionicon{
 }
 .comments input:focus{
   outline: none;
+
 }
 .comment section:nth-child(1) div:nth-child(2){
   font-size: 8px;
@@ -1629,6 +1634,12 @@ header .ionicon{
   padding: 5px;
   width: 98%;
   font-size: 11px;
+}
+.viewer hr{
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+ 
 }
 
 }
