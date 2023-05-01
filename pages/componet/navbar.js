@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Movies from "./navbar-list/movies";
-import data from "../api/api_hollyood2.json"
+import data from "../api/api_lastview.json"
 import { useRouter } from "next/router";
+import Loading from "./looding";
 
 const Navbar = ({setcolor}) => {
   const handelburger = () => {
@@ -18,9 +19,25 @@ const Navbar = ({setcolor}) => {
 
   const router = useRouter();   
   var arr = []
-  
-
+  const [view, setview] = useState(2)
+  useEffect(()=>{
+    const v= window.localStorage.getItem("view")
+    setview(Number(v)) 
+    console.log(view);
     
+
+ })
+
+ var data_fil = data.filter( element => element.id==view)
+
+
+  
+          
+  //  setview(value)
+ 
+ 
+
+ 
     //   for(let i=0;i<data.length;i++){
     // if (data[i].title.includes('z')){
     //     arr.push(i)
@@ -88,7 +105,16 @@ const Navbar = ({setcolor}) => {
             <hr />
 
             <div>
-              <img src="" /> <Link href="/componet/person">تابع المشاهدة</Link>
+             <span>تابع المشاهدة</span>  
+               {
+                data_fil.map((el)=>(
+                  <section className="viewer">
+                <img className="viewes" src={el.Image} onClick={()=>router.push(`/componet/navbar-list/${view}`)} width={160} />
+                <hr />
+                <p >{el.title}</p></section>
+                ))
+               }
+               
             </div>
 
             <div>
@@ -112,6 +138,8 @@ const Navbar = ({setcolor}) => {
           </section>
         </div>
       </nav>
+      <Loading/>
+
     </div>
   );
 };
