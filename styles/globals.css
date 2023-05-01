@@ -54,9 +54,7 @@ header .h3{
   cursor: pointer;
   color: #ffffff;
 }
-.logo{
-  margin-right: 20px;
-}
+
 
 .searching{
   position: relative;
@@ -1312,6 +1310,7 @@ body {
   header .search:focus{
     
   }
+  
   .fullhome{
   margin-right: 20px;    
   }
@@ -1532,7 +1531,7 @@ font-size: 20px;
 header span{
  position: relative;
  width: 180px;
- left: 20px;
+ left: 00px;
 }
  header .search{
     width: 70px;
