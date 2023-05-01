@@ -106,6 +106,27 @@ header .search{
 
  
 }
+.viewes{
+  margin-top: 15px;
+  border-bottom:rgb(143, 142, 142) 2px solid;
+}
+.viewer{
+  position: relative;
+}
+.viewer hr{
+  position: absolute;
+  left: 20px;
+  bottom: 31.5px;
+  border: 1px solid red;
+  width: 70px;
+}
+.viewer p{
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+
+}
+
 .searchi{
   position: relative;
 
@@ -379,17 +400,7 @@ top: 20px;
   color: red;
   text-align: center;
 }
-.descrption{
-  display: flex;
-  gap: 2%;
-}
-.headmovie h3{
-  font-size: 60px;
-}
-.headmovie h4{
-  color: rgb(159, 161, 161);
-  transform: translateY(-25px);
-}
+
 .alfeen{
   display: flex;
   gap: 20px;
@@ -762,19 +773,10 @@ padding-right: 20px;
 /* page home movie  */
 .vid{ 
   width: 100%;
-  height: 1300px;
+  height: 1500px;
 
 }
-.vid video{
 
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  aspect-ratio: 16/9;
-  transform: translateY(-26px) translateX(0px);
-
-  outline: none;
-}
 .vid iframe{
   width: 100%;
   height: 400px;
@@ -784,9 +786,75 @@ padding-right: 20px;
   margin-bottom: 30px;
   outline: none;
 }
+.fullhome{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.descrption{
+  position: relative;
+  /* right: 40px; */
+  bottom: 30px;
+}
+.descrption img{
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+}
+.descrption .headmovie h3{
+  font-size: 30px;
+  
+}
+/* comment components */
+.comment{
+  width: 500px;
+ margin: 5px;
+  padding: 10px;
+  background-color: rgba(1, 23, 42, 0.948);
 
 
 
+}
+.comments input{
+  width: 440px;
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  font-size: 17px;
+  color: #ffffff;
+  padding-right: 20px;
+  height: 50px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  margin-right: 10px;
+  
+}
+.comment input {
+  outline: none;
+}
+.comment section:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+}
+.comment section:nth-child(1) div{
+  display: flex;
+}
+.comment section:nth-child(1) div:nth-child(2){
+  font-size: 11px;
+}
+.comment section:nth-child(1) img{
+ 
+  width: 50px;
+  aspect-ratio: 3/3;
+  margin: 7px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment section:nth-child(3){
+  padding: 6px;
+  width: 95%;
+  font-size: 14px;
+}
 .likeing{
   width: 100%;
   display: flex;
@@ -799,7 +867,7 @@ padding-right: 20px;
   cursor: pointer;
   /* box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0); */
   height: 29px;
-  background-color: rgba(8, 41, 77, 0.541);
+  background-color: rgba(1, 23, 42, 0.948);
   margin-left: .5px;
   border: .5px solid black;
   text-align: center;
@@ -1071,7 +1139,7 @@ padding-right: 20px;
   border-radius: 20px;
   position: absolute;
   font-size: larger;
-  right: 70px;
+  right: 40px;
   bottom: 30px;
 }
 .shahd1 p{
@@ -1223,6 +1291,21 @@ body {
     transform: rotate(-360deg);
   }
 }
+@media only screen and (max-width:1064px){
+  .vid{
+    height: 2000px;
+  }
+  header{
+    font-size: 13px;
+  }
+  header .h3 h3{
+    width: 100px;
+    
+  }
+  header .search{
+    width: 240px;
+  }
+}
 @media only screen and (max-width:700px) {
   .leftright{
     width:85%;
@@ -1318,8 +1401,10 @@ body {
       height: 30%;
     }
     .imgvideo img{
-     width: 20px;
-  
+     margin-right: 10px; 
+     margin-top: 30px;
+     width: 300px;
+     
     }
 
     .navbar input{
@@ -1347,10 +1432,6 @@ height: 20px;
   width: 120%;
   gap: 50px;
 
-}.descrption{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
 }
 
 
@@ -1401,7 +1482,7 @@ height: 20px;
   border-radius: 0px;
 }
 .vid{
-  height:1000px;
+  height:1850px;
 }
 .vid iframe{
   position: relative;
@@ -1423,13 +1504,8 @@ height: 20px;
 font-size: 20px;
 }
 
-.descrption .img {
-position: relative;
-right: 200px;
-border-radius: 40px;
-  
 
-}
+
 /* header .h3{
   font-size: 7px;
   align-items: center;
@@ -1490,6 +1566,11 @@ border-radius: 40px;
   justify-content: center;
 }
 /* loading page */
+.loading{
+  height: 100%;
+  background-color: #000000;
+
+}
 .loading div{
   position: relative;
   bottom: 60px;
@@ -1497,17 +1578,18 @@ border-radius: 40px;
   color: white;
 }
 .spinner {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .spinner2{
-  
+  margin-left: 35px;  
 }
 .loading h2{
-font-size: 60px;
+  font-weight: 100;
+font-size: 80px;
 margin: 20px;
 position: relative;
-top: 3px;
+top: -6px;
 
 }
 
@@ -1525,6 +1607,30 @@ header .ionicon{
 .searching{
   transform: translateX(-20px);
 }
+/* coments */
+.comment{
+  width: 98%;
+  font-size: small;
+  justify-content: center;
+  left: 2px;
+}
+.comments input{
+  width: 90%;
+  font-size: medium;
+}
+.comments input:focus{
+  outline: none;
+}
+.comment section:nth-child(1) div:nth-child(2){
+  font-size: 8px;
+}
+
+.comment section:nth-child(3){
+  padding: 5px;
+  width: 98%;
+  font-size: 11px;
+}
+
 }
 @media only screen and (max-width:280px) {
   .loading p{
