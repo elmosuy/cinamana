@@ -33,11 +33,11 @@ const Movie = () => {
       <div className="imgvideo" dir="rtl">
         <div className="likeing">
           <section>
-            <p>25.7k</p> <Image width={20} height={20} src="/like.svg" />
+            <p>25.7k</p> <Image width={20} height={20} src="/cinamana/like.svg" />
           </section>
           <section>
             <p>358</p>
-            <Image width={20} height={20} src="/like.svg" />
+            <Image width={20} height={20} src="/cinamana/like.svg" />
           </section>
           
         </div>
@@ -79,7 +79,7 @@ const Movie = () => {
                 {
                   coments.map((el)=>(
                     <div className="comment">
-                    <section><div><img src={el.Image} alt=""  /> <h4>{el.Name}</h4></div><div><p>{el.date}</p></div></section>
+                    <section><div><img src={`/cinamana${el.Image}`} alt=""  /> <h4>{el.Name}</h4></div><div><p>{el.date}</p></div></section>
                     <hr />
                     <section>
                         <p>{el.title}</p>
