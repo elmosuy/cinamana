@@ -91,7 +91,7 @@ const Movie = () => {
                 </div>
                   ))
                 }
-                <input type="search" name="" id="" placeholder="ضع تعليقا مناسبا" />
+                <input type="text" name="" id="" placeholder="ضع تعليقا مناسبا" />
                 
                 </div>
                 
