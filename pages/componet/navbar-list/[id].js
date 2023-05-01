@@ -36,10 +36,10 @@ const Movie = () => {
       <div className="imgvideo" dir="rtl">
         <div className="likeing">
           <section>
-            <p >{cont}</p> <Image width={20} height={20} src="/cinamana/like.svg" />
+            <p >23</p> <Image width={20} height={20} src="/cinamana/like.svg" />
           </section>
           <section>
-            <p>23</p>
+            <p>{cont}</p>
             <Image width={20} height={20} src="/cinamana/like.svg" />
           </section>
           
