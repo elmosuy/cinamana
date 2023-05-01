@@ -51,11 +51,12 @@ const handelnextmovie=()=>{
       
       </Head>
 
-      <Loading/>
 
-        <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>       
+        <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>    
+     
           <div className='leftright'> <img src="/cinamana/rightt.svg" alt="" width={30} className='right' onClick={handelnextmovie}/><img src="/cinamana/rightt.svg" alt="" width={30} className='left' onClick={handelprevmovie} />  
             </div> 
+
                <div dir='rtl' className='shahd1'>
                 <Link href="/componet/navbar-list/1119"><p>شاهد الان</p></Link>
                </div>
