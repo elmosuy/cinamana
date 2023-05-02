@@ -45,13 +45,26 @@ const Layout = ({ children }) => {
    
                return el.title.toLowerCase().includes(search)})
 
-     
+useEffect(() => {
+  if(filteredData.length>=10){
+  document.getElementById("more").style.display="flex"
+} else if(filteredData.length>=20){
+  const more=document.getElementById("more")
+  more.style.display="flex"
+  more.style.textAlign="center"
+
+ }else {
+  document.getElementById("more").style.display="none"
+
+}
+})     
 
 const [n, setn] = useState(10)
 const loop=()=>{
  setn(n+10)
  
 }
+
 
 const handelbody = () => {
   const bod = (document.body.style.background = color);
@@ -76,7 +89,7 @@ useEffect(() => {
         <title>Moon</title>
       </Head>
       <header dir="rtl">
-        <div className="head">
+        {/* <div className="head"> */}
           <Image
             className="logo"
             onClick={() => router.push("/")}
@@ -84,7 +97,7 @@ useEffect(() => {
             width={90}
             height={35}
           />
-        </div>
+        {/* </div> */}
         <div className="searching" >
           <span>
           <input
@@ -120,7 +133,7 @@ useEffect(() => {
               ))
             }
             
-         <span onClick={loop} id="more">Show more</span> </div>{" "}
+         <div onClick={loop} className="more " id="more"><h3> Show more</h3></div> </div>{" "}
         </div>
         <div className="h3">
           <select name="" id="" className="languge">
