@@ -331,6 +331,9 @@ header .search:focus{
 
 
 }
+.moves-en{
+  min-height: 100vh;
+}
 
 .signin{
 height: 100vh;
@@ -894,6 +897,22 @@ padding-right: 20px;
 }
 
 /* select search type movies */
+.more-movie{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+  position: relative;
+  top: 80px;
+
+}
+.more-movie h3{
+  cursor: pointer;
+  padding: 12px;
+  background-color: #013357;
+  border-radius: 30px;
+}
 .serch-movies select{
   background-color: #016f9f3a;
   border-radius: 20px;
