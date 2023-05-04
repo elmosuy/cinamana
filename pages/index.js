@@ -50,7 +50,7 @@ const handelnextmovie=()=>{
         <title>الصفحة الرئيسية</title>
       
       </Head>
-
+       
 
         <div className="background" style={{ backgroundImage: `url(/cinamana/movie${img}.jpg) `}}>    
      
