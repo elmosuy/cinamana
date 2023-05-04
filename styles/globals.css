@@ -1593,6 +1593,7 @@ header span{
 }
  header .search{
     width: 30px;
+    height: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset;
     font-size: 13px;
     z-index: 100;
