@@ -1350,6 +1350,14 @@ body {
   .vid{
     height: 2200px;
   }
+  .img-film-en .img{
+    width: 140px;
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: 20%;
+    
+  }
   header{
     font-size: 13px;
   }
