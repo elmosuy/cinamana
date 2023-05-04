@@ -51,7 +51,7 @@ const Movie = () => {
               <div className="fullhome">
               <div className="descrption">
                 <section >
-                  <img src={`${el.Image}`} className="descrptionimg" width={450} height={250} />
+                  <img src={`${el.Image}`} className="descrptionimg" width={500}  />
                 </section>
                 <section>
                   {" "}
