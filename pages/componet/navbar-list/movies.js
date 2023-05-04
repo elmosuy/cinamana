@@ -109,11 +109,11 @@ setn(n+70)
           <div className={i.id}>
             <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
            <p>{i.IMDb}</p>
-            <Image  width={300} height={200}   src={i.Image}></Image>
-           
+            <Image  width={300} height={200}   src={i.Image} className='image'></Image>
+            <img src="/cinamana/plays.svg" className='img'  alt="" />
             </div>
           <p>{i.title}</p>
-          <p className='type-movie'> {i.descrption} </p>
+          <p className='type-movie'> {i.type} </p>
 
 
 

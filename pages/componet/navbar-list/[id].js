@@ -10,6 +10,7 @@ import coments from "../../api/comments_api.json";
 import Laintree from "../laintree";
 
 const Movie = () => {
+  
   const router = useRouter();
   const { id } = router.query;
   const [cont, setcont] = useState(1346)
