@@ -526,10 +526,10 @@ padding-right: 20px;
     z-index: 2;
     margin-bottom: 50px;
   }
-  .sotialmedia .img{
+  .sotialmedia a .img{
     filter: grayscale(1);}
   
-  .sotialmedia .img:hover{
+  .sotialmedia a .img:hover{
     filter: opacity(1);
     transform: translateY(-5px);
   }
@@ -1722,12 +1722,7 @@ header .ionicon{
   width: 98%;
   font-size: 11px;
 }
-.viewer hr{
-  position: absolute;
-  left: 20px;
-  bottom: 30px;
- 
-}
+
 
 
 }
