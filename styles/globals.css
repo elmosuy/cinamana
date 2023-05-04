@@ -1351,10 +1351,10 @@ body {
     height: 2200px;
   }
   .img-film-en .img{
-    width: 140px;
+    width: 200px;
     position: absolute;
     display: none;
-    top: 25%;
+    top: 23%;
     left: 25%;
     
   }
