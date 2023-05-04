@@ -803,8 +803,7 @@ padding-right: 20px;
 }
 .descrption img{
   border-radius: 10px;
-  width: 400px;
-  height: 200px;
+
 }
 .descrption .headmovie h3{
   font-size: 30px;
@@ -1349,7 +1348,7 @@ body {
 }
 @media only screen and (max-width:1064px){
   .vid{
-    height: 2000px;
+    height: 2200px;
   }
   header{
     font-size: 13px;
@@ -1596,6 +1595,7 @@ header span{
     width: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset;
     font-size: 13px;
+    z-index: 100;
  }
  header input:focus{
   width: 200%;
@@ -1605,6 +1605,7 @@ header span{
 header span .ionicon{
   position: absolute;
   left: 10px;
+  width: 24px;
   top: 0px;
 }
  .searcher{
