@@ -129,7 +129,6 @@ const Navbar = ({setcolor}) => {
    
 
             <div className="sotialmedia">
-              <a href="www.facebook.com"><img height={30} src="/cinamana/facebook.svg" width={30}  /></a>
              <a href="www.instagam.com"> <img height={30} src="/cinamana/instagram.svg" width={30}  /></a>
              <a href="https://t.me/llnle"><img height={30} src="/cinamana/telegram.svg" width={30}  /></a>
              <a href="https://twitter.com/elmossuy"> <img height={30} src="/cinamana/twitter.svg" width={30}  /></a>
