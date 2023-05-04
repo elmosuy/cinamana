@@ -1594,9 +1594,11 @@ header span{
  header .search{
     width: 30px;
     height: 32px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.583) inset,0 0 20px rgba(0, 0, 0, 0.583) inset; */
     font-size: 13px;
-    z-index: 100;
+    z-index: 100; 
+    border-radius:0px;
+
  }
  header input:focus{
   width: 200%;
@@ -1605,9 +1607,9 @@ header span{
 }
 header span .ionicon{
   position: absolute;
-  left: 10px;
+  left: 11px;
   width: 24px;
-  top: 0px;
+  top: -2px;
 }
  .searcher{
   top:45px;  
