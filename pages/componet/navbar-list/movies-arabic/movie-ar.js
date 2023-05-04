@@ -3,38 +3,59 @@ import Image from 'next/image'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import datas from "../../../api/api_Arabic.json"
-import data from "../../../api/api_Arabic2.json"
 import Link from 'next/link';
 
-const Moviese = () => {
+const Movies = () => {
   const router = useRouter();   
   const[range,setrange]=useState("2023")
   const rangetype = () => {
     const rangeType = document.getElementById("rangeType");
     rangeType.classList.toggle("show-range");
   };
-const [post, setpost] = useState([])
+// const [post, setpost] = useState([])
+//  const scroll=()=>{
+//     setTimeout(()=>{
+//       setpost(datas)
+//      }, 6000)}
+//   useEffect(() => {
 
-  useEffect(() => {
-    setTimeout(()=>{
-      setpost(datas)
-     }, 10000)
+//       scroll()
+
+//   })
   
 
- 
-  })
-  
+// scroll()
+const [select, setselect] = useState("عربي")
+
+const filteredDaa = datas.filter((el) => {return el.type.includes(select)})
+   
+  console.log(select);
+useEffect(() => {
+  if(filteredDaa.length==80){
+  document.getElementById("more-move").style.display="flex"
+}else if(filteredDaa.length>=160){
+  document.getElementById("more-move").style.display="flex"
+
+}else {
+  document.getElementById("more-move").style.display="none"
+
+}
+})
 
 
 
- 
+const [n, setn] = useState(70)
+const loop=()=>{
+setn(n+70)
+
+}
 
 
   return (
     <div  className='moves-en'>
       <Head>
         <title>
-          افلام عربية
+          افلام
         </title>
       </Head>
 
@@ -43,27 +64,23 @@ const [post, setpost] = useState([])
           <ul>
             <li >افلام</li>
 <Link href="/componet/series"><li>مسلسلات</li></Link>
-             <select name="انواع" id="">
-            <option value="">الكل</option>
-              <option value="">كوميدي</option>
-              <option value="">دراما</option>
-              <option value="">رومانسي</option>
-              <option value="">مثير</option>
-              <option value="">افلام قصيرة</option>
-              <option value="">اكشن</option>
-              <option value="">برامج</option>
-              <option value="">حروب</option>
-              <option value="">حياة الغرب</option>
-              <option value="">خيال</option>
-              <option value="">رسوم متحركة</option>
-              <option value="">سيرة ذاتية</option>
-              <option value="">عائلي</option>
-              <option value="">غموض</option>
-              <option value="">مدبلج بالعربي</option>
-              <option value="">نفسي</option>
-
-
+             <select  name="انواع" id="" onChange={(e)=>{setselect(e.target.value)}}>
+            <option value="عربي">الكل</option>
+              <option value="كوميدي">كوميدي</option>
+              <option value="دراما">دراما</option>
+              <option value="رومانسي">رومانسي</option>
+              <option value="اثارة">مثير</option>
+              <option value="اكشن">اكشن</option>
+              <option value="حرب">حروب</option>
+              <option value="حياة الغرب">حياة الغرب</option>
+              <option value="خيال">خيال</option>
+              <option value="سيرة ذاتية">سيرة ذاتية</option>
+              <option value="عائلي">عائلي</option>
+              <option value="غموض">غموض</option>
+              <option value="مدبلج">مدبلج بالعربي</option>
+              <option value="نفسي">نفسي</option>
             </select>
+
             <li onClick={rangetype}>
               <span>سنة 2023-1900</span>
                 <div  className='rang-type' id='rangeType'>
@@ -87,16 +104,16 @@ const [post, setpost] = useState([])
       </div>
       <div className='apis-en'>
     
-   { data.map((i)=>(
+   { filteredDaa.slice(0,n).map((i)=>(
       <section  key={i.id} className='a-en'>
           <div className={i.id}>
             <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
            <p>{i.IMDb}</p>
-            <Image  width={300} height={200}   src={i.Image}></Image>
-           
+            <Image  width={300} height={200}   src={i.Image} className='image'></Image>
+            <img src="/plays.svg" className='img'  alt="" />
             </div>
           <p>{i.title}</p>
-          <p className='type-movie'>كوميدي 2022, دراما</p>
+          <p className='type-movie'> {i.type} </p>
 
 
 
@@ -104,26 +121,10 @@ const [post, setpost] = useState([])
           </div>
       </section>
    ))}
-   { post.map((i)=>(
-      <section  key={i.id} className='a-en'>
-          <div className={i.id}>
-            <div className='img-film-en' onClick={()=>router.push(`./${i.id}`)}>
-           <p>{i.IMDb}</p>
-            <Image  width={300} height={200}   src={i.Image}></Image>
-           
-            </div>
-          <p>{i.title}</p>
-          <p className='type-movie'>كوميدي 2022, دراما</p>
+</div>  <div className='more-movie' id='more-move'> <h3 onClick={loop}>شاهد المزيد</h3></div> 
 
-
-
-
-          </div>
-      </section>
-   ))}
-</div>
     </div>
   )
 }
 
-export default Moviese
+export default Movies
