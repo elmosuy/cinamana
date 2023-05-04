@@ -813,10 +813,10 @@ padding-right: 20px;
 .comment{
   width: 500px;
  margin: 5px;
- margin-bottom: 6px;
+ margin-bottom: 8px;
   padding: 10px;
   /* background-color: rgba(1, 23, 42, 0.948); */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
+  box-shadow: 0 0 20px rgba(23, 23, 24, 0.282);
 }
 .comment:hover{
   box-shadow: none;
@@ -1111,7 +1111,8 @@ padding-right: 20px;
   list-style: none;
 }
 .serch-movies .section1 ul li:nth-child(1){
-  background-color: #000000;
+  background-color: #022542;
+
 }
 .serch-movies .section1 ul li{
   background-color: #02344a3a;
@@ -1123,7 +1124,7 @@ padding-right: 20px;
   text-align: center;
 }
 .serch-movies .section1 ul li:hover,.serch-movies p:hover{
-  background-color: #000000;
+  background-color: #022542;
 }
 
 .serch-movies p{
@@ -1258,6 +1259,7 @@ body {
 .serch-movies select{
   background-color: #08314331;
   border-radius: 20px;
+  
   color: #ffffff;
   width: 100px;
   border: none;
@@ -1480,6 +1482,7 @@ body {
      width: 300px;
      
     }
+   
 
     .navbar input{
       position: relative;
@@ -1489,7 +1492,10 @@ body {
       /* transform: translateY(50px) translateX(170px); */
       /* background: rgba(17, 31, 113, 0.285); */
     } 
-    
+    .serch-movies select{
+      width: 80px;
+      font-size: small;
+    } 
     
 .h3 select{
   transform: translateY(-10px) ;
@@ -1518,9 +1524,9 @@ height: 20px;
   font-size: 10px;
 }
 .a-en .type-movie{
-  font-size: 5px;
+  font-size: 10px;
   position: relative;
-  top: 1px ;
+  top: .2px ;
 }
 .serch-movies{
   display: flex;
@@ -1538,6 +1544,7 @@ height: 20px;
 .burger{
   position: fixed;
   left:40px;
+  text-decoration: ;
   
   height: 20px;
   width: 20px;
@@ -1556,7 +1563,7 @@ height: 20px;
   border-radius: 0px;
 }
 .vid{
-  height:1850px;
+  height:1250px;
 }
 .vid iframe{
   position: relative;
@@ -1730,8 +1737,16 @@ header .ionicon{
   width: 98%;
   font-size: 11px;
 }
+.serch-movies .section1 ul{
+  gap: 4px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-
+.serch-movies .section1 ul li{
+  height: 30px;
+}
 
 }
 @media only screen and (max-width:280px) {
