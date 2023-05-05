@@ -6,7 +6,7 @@ const Loading = () => {
    const loading=  document.getElementById("loading")
    setTimeout(()=>{
     loading.style.display="none";
-   }, 4000)
+   }, 3000)
     })
     
   return (
