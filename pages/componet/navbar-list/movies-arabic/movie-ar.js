@@ -98,9 +98,7 @@ setn(n+70)
            
           </ul>
         </div>
-        <div>
-          <p>صنف حسب الملفات الحديثة</p>
-        </div>
+      
       </div>
       <div className='apis-en'>
     
