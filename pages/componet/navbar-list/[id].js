@@ -14,11 +14,20 @@ const Movie = () => {
   const router = useRouter();
   const { id } = router.query;
   const [cont, setcont] = useState(1346)
+ 
 
   useEffect(() => {
     localStorage.setItem("view", id);
+  
   }, [id]);
-
+   const [idn, setidn] = useState(id)
+  useEffect(()=>{
+      const v= window.localStorage.getItem("view")
+      setidn(Number(v)) 
+      console.log(idn);
+      
+  
+   })
 
   
   var data_filter = dat.filter((element) => element.id == id);
@@ -26,7 +35,7 @@ const Movie = () => {
   return (
     <div className="vid">
       <iframe
-        src={data[id || 1].Link}
+        src={data[idn||1].Link}
         frameborder="0"
         allowFullScreen
         controls="true"
