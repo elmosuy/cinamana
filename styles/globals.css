@@ -236,7 +236,8 @@ header .search:focus{
 
   }
   .navbar div img{
-    margin-left: 10px;
+    margin-left: 14px;
+    transform: translateY(2.5px);
   }
   .navbar div p{
     position: relative;
