@@ -1208,7 +1208,12 @@ padding-right: 20px;
   position: absolute;
   right: -20px;
   font-size: large;
+  transition: .1s ease;
  
+}
+.shahd1 p:hover{
+  color: #00fedc;
+  text-shadow: 0 1.6px 1px rgb(255, 0, 0);
 }
 body {
   color: white;
@@ -1573,7 +1578,7 @@ height: 20px;
 .shahd1{
   text-align: center;
   right: 40px;
-  bottom: -30px;
+  bottom: -10px;
   
 }
 .shahd1 p{
