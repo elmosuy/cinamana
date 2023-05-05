@@ -60,26 +60,27 @@ const Navbar = ({setcolor}) => {
 
             <div className="searching">
               {" "}
+              <Image src="/search.svg"  height={20} width={20} />{" "}
     
 
 
             </div>
        
             <div>
-              <Link href="/">الصفحة الرئيسية</Link>
+             <Link href="/">الصفحة الرئيسية</Link><img src="/home.svg" width={20}/>
             </div>
 
             <div>
-              <img src="" /> <span onClick={()=>router.push("/componet/navbar-list/movies_new")}>الاصدارات الجديدة</span>
+              <span onClick={()=>router.push("/componet/navbar-list/movies_new")}>الاصدارات الجديدة</span><img src="/new.svg" width={20}/>
             </div>
 
             <div>
-              <img src="" /> <Link href="/componet/navbar-list/movie_watch">المشهورة</Link>
+              <Link href="/componet/navbar-list/movie_watch">المشهورة</Link><img src="/popular.svg" width={20}/>
             </div>
 
             <div>
-              <img src="" />{" "}
-              <span  onClick={handelfilm}>الافلام</span>
+             
+              <span  onClick={handelfilm}>الأفلام</span><img src="/movies.svg" width={20}/>
               <div className="aflam" id="aflam">
                <Link href="/componet/navbar-list/movies"><p>افلام اجنبية</p></Link>
                <Link href="/componet/navbar-list/movies-arabic/movie-ar"><p>الافلام العربية</p></Link>
@@ -95,16 +96,16 @@ const Navbar = ({setcolor}) => {
             </div>
 
             <div>
-              <img src="" /> <Link href="/componet/series">المسلسلات</Link>
+            <Link href="/componet/series">المسلسلات</Link><img src="/series.svg" width={20}/>
             </div>
 
             <div>
-              <img src="" /> <Link href="/componet/navbar-list/movie_Anami">انمي</Link>
+             <Link href="/componet/navbar-list/movie_Anami">انمي</Link><img src="/animi.svg" width={20}/>
             </div>
             <hr />
 
             <div>
-             <span>تابع المشاهدة</span>  
+             <span>تابع المشاهدة</span>  <img src="/watching.svg"  alt="" />
                {
                 data_fil.map((el)=>(
                   <section className="viewer">
@@ -128,6 +129,7 @@ const Navbar = ({setcolor}) => {
    
 
             <div className="sotialmedia">
+              <a href="www.facebook.com"><img height={30} src="/facebook.svg" width={30}  /></a>
              <a href="www.instagam.com"> <img height={30} src="/instagram.svg" width={30}  /></a>
              <a href="https://t.me/llnle"><img height={30} src="/telegram.svg" width={30}  /></a>
              <a href="https://twitter.com/elmossuy"> <img height={30} src="/twitter.svg" width={30}  /></a>
