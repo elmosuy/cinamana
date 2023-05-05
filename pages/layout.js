@@ -84,7 +84,7 @@ useEffect(() => {
           rel="icon"
           type="image/png"
           sizes="64x64"
-          href="/cinamana/logot.png"
+          href="/logot.png"
         />
         <title>Moon</title>
       </Head>
@@ -93,7 +93,7 @@ useEffect(() => {
           <Image
             className="logo"
             onClick={() => router.push("/")}
-            src="/cinamana/llb.png"
+            src="/llb.png"
             width={90}
             height={35}
           />
