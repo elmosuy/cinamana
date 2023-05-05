@@ -813,7 +813,7 @@ padding-right: 20px;
 .comment{
   width: 500px;
  margin: 5px;
- margin-bottom: 8px;
+ margin-bottom: 6px;
   padding: 10px;
   /* background-color: rgba(1, 23, 42, 0.948); */
   box-shadow: 0 0 20px rgba(23, 23, 24, 0.282);
@@ -1563,7 +1563,7 @@ height: 20px;
   border-radius: 0px;
 }
 .vid{
-  height:1250px;
+  height:1850px;
 }
 .vid iframe{
   position: relative;
