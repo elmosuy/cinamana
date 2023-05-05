@@ -11,7 +11,9 @@ const nextConfig = {
     domains:['www.q-film.tv','e.qfilm.tv'],
     allowFutureImage: true
 
-  }
+  },
+  trailingSlash: true
+
 }
 
 
