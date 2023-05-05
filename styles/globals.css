@@ -190,16 +190,14 @@ header .search:focus{
   background:  rgb(10, 21, 32);
   position: fixed;
   z-index:  120;
-  font-size: 14px;
   color: #ffffffba;
   width: 200px;
   transform: translateX(700px);
   text-align: right;
   right:0;
   overflow-x: hidden;
-
-  /* transform: translate(200px); */
   top: 50px;
+  user-select: none;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.623), 0px 6px 20px rgba(0, 0, 0, 0.623) ;
   transition: .5s ease;
 
@@ -234,12 +232,12 @@ header .search:focus{
     position: relative;
     cursor: pointer;
     right: 10px;
-    font-size: 15px;
+    font-size: 17px;
 
   }
   .navbar div p{
     position: relative;
-    left: 6px;
+    left: 16px;
   }
   .navbar div span img{
     position: absolute;
@@ -1090,11 +1088,11 @@ padding-right: 20px;
 .aflam p{
   padding-bottom: -10px;
   text-align: right;
-  height: 30px;
+  height: 26px;
   width: 100%;
 }
-.aflam p:hover{
-  background-color: #0000005b;
+.aflam p:hover{ 
+color: rgb(221, 193, 159);
 }
 
 .serch-movies{
@@ -1196,30 +1194,27 @@ padding-right: 20px;
   bottom: 30px;
 }
 .shahd1 p{
-  padding: 0 7px  0px   3px;
+  padding: 0 7px  0px   7px;
+  padding-right: 20px;
   border: 1px solid ;
+  font-family: Arial, Helvetica, sans-serif;
   height: 50px;
-  width: 90px;
+  width: 120px;
   display: flex;
   cursor: pointer;
   text-align: center;
   align-items: center;
   border-radius: 20px;
   position: absolute;
-  right: -20px;
-  font-size: large;
+  font-size: 25px;
   transition: .1s ease;
  
 }
 .shahd1 p:hover{
-  color: #00fedc;
-  text-shadow: 0 1.6px 1px rgb(255, 0, 0);
-}
+  color: rgb(4, 167, 255);}
 body {
   color: white;
-
-
-
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 .h3 select{
@@ -1577,8 +1572,8 @@ height: 20px;
 }
 .shahd1{
   text-align: center;
-  right: 40px;
-  bottom: -10px;
+  right: 0px;
+  bottom: 0px;
   
 }
 .shahd1 p{
