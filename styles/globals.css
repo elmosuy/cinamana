@@ -1198,11 +1198,12 @@ padding-right: 20px;
 }
 .shahd1 p{
   background-color: red;
-  padding: 0 5px  0px   5px;
+  padding: 0 3px  0px   3px;
   height: 50px;
   width: 90px;
   display: flex;
   cursor: pointer;
+  text-align: center;
   align-items: center;
   border-radius: 20px;
   position: absolute;
@@ -1571,7 +1572,8 @@ height: 20px;
   
 }
 .shahd1{
-  padding:  5px 10px;
+  padding: 3px 8px;
+  text-align: center;
   right: 40px;
   bottom: -30px;
 
@@ -1627,7 +1629,7 @@ header span .ionicon{
   top: -2px;
 }
  .searcher{
-  top:45px;  
+  top:40px;  
   width: 300px;
   left: -120px;
  }
