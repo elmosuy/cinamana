@@ -129,10 +129,10 @@ const Navbar = ({setcolor}) => {
    
 
             <div className="sotialmedia">
-             <a href="www.instagam.com"> <img height={30} src="/instagram.svg" width={30}  /></a>
-             <a href="https://t.me/llnle"><img height={30} src="/telegram.svg" width={30}  /></a>
-             <a href="https://twitter.com/elmossuy"> <img height={30} src="/twitter.svg" width={30}  /></a>
-             <a href="https://www.linkedin.com/in/elmosuyfrontend/"> <img height={30} src="/linkedin.svg" width={30}  /></a>
+             <a href="https://www.instagram.com/955ee"> <img height={28} src="/instagram.svg" width={28}  /></a>
+             <a href="https://t.me/llnle"><img height={28} src="/telegram.svg" width={28}  /></a>
+             <a href="https://twitter.com/elmossuy"> <img height={28} src="/twitter.svg" width={28}  /></a>
+             <a href="https://www.linkedin.com/in/elmosuyfrontend/"> <img height={28} src="/linkedin.svg" width={28}  /></a>
             </div>
           </section>
         </div>
